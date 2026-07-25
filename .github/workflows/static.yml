@@ -33,6 +33,10 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # Active Pages via l'API si ce n'est pas deja fait, au lieu
+          # d'echouer sur "Get Pages site failed / Not Found".
+          enablement: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

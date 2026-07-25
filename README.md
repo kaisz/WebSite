@@ -41,7 +41,10 @@ Le numéro figure aussi dans les données structurées JSON-LD de `index.html`
 
 ### Nom de domaine
 
-Trois endroits contiennent l'URL de démonstration `https://kaiszouali.com/` :
+Le site est publié sur **<https://kaisz.github.io/WebSite/>**.
+
+Trois endroits contiennent cette URL et sont à mettre à jour si un domaine
+personnalisé est branché plus tard :
 
 | Fichier | Ligne |
 |---|---|
@@ -49,7 +52,8 @@ Trois endroits contiennent l'URL de démonstration `https://kaiszouali.com/` :
 | `robots.txt` | `Sitemap: …` |
 | `sitemap.xml` | `<loc>…</loc>` |
 
-Remplacer par le domaine réel une fois choisi.
+Les chemins d'assets étant tous relatifs, le site fonctionne indifféremment à la
+racine d'un domaine ou dans un sous-chemin — rien d'autre à modifier.
 
 ### Image de partage (optionnel mais recommandé)
 
@@ -81,16 +85,18 @@ Le site étant 100 % statique, l'hébergement est gratuit chez tous les fourniss
 **Cloudflare Pages / Netlify** — glisser-déposer le dossier sur leur interface.
 Build command : *(vide)*. Publish directory : `/`.
 
-**GitHub Pages**
+**GitHub Pages** *(déploiement actuel)*
 
-```bash
-git init && git add . && git commit -m "Site vitrine"
-git branch -M main
-git remote add origin https://github.com/kaisz/kaisz.github.io.git
-git push -u origin main
-```
+Le dépôt <https://github.com/kaisz/WebSite> déploie automatiquement à chaque push
+sur `main`, via `.github/workflows/static.yml`.
 
-Puis *Settings → Pages → Source: main / root*.
+Prérequis à faire **une seule fois**, dans *Settings → Pages → Build and deployment* :
+régler **Source** sur **GitHub Actions**. Sans cela, l'étape `configure-pages`
+échoue avec `Get Pages site failed … Not Found`, car l'API Pages du dépôt n'existe
+pas encore. Le workflow passe `enablement: true` pour tenter de l'activer tout seul,
+mais le réglage manuel reste la voie la plus fiable.
+
+Suivi des déploiements : onglet *Actions* du dépôt.
 
 **VPS avec Nginx** — copier le dossier dans `/var/www/kaiszouali` et servir en statique.
 

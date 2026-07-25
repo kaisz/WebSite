@@ -1,4 +1,8 @@
+# Note : sur une "project page" GitHub (kaisz.github.io/WebSite/), ce fichier
+# est servi sous /WebSite/robots.txt et n'est donc PAS lu par les robots, qui
+# ne consultent que https://kaisz.github.io/robots.txt. Il ne redeviendra
+# effectif qu'avec un domaine personnalise pointant sur la racine du site.
 User-agent: *
 Allow: /
 
-Sitemap: https://kaiszouali.com/sitemap.xml
+Sitemap: https://kaisz.github.io/WebSite/sitemap.xml
