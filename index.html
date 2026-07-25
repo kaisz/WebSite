@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.title">Kais Zouali — Ingénieur logiciel senior freelance · IA, Full-Stack, DevSecOps</title>
+<meta name="description" data-i18n="meta.description" content="Ingénieur logiciel senior indépendant : ingénierie IA & agents, développement full-stack Java/Spring & React, architecture microservices, DevOps/Kubernetes et cybersécurité applicative. 16 ans d'expérience, Tunisie & Europe, à distance ou sur site.">
+<meta name="author" content="Kais Zouali">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://kaiszouali.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" data-i18n="meta.ogTitle" content="Kais Zouali — Ingénieur logiciel senior freelance">
+<meta property="og:description" data-i18n="meta.description" content="IA & agents, full-stack Java/React, architecture, DevOps et cybersécurité. 16 ans d'expérience au service de vos projets.">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="theme-color" content="#0a0e17" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<!-- Les animations d'apparition ne masquent le contenu que si JS est actif :
+     sans JS, la page reste entièrement lisible. -->
+<script>document.documentElement.classList.add('js');</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Kais Zouali — Ingénierie logicielle & IA",
+  "description": "Prestations d'ingénierie logicielle indépendantes : IA & agents, développement full-stack Java/Spring & React, architecture technique, DevOps/Cloud et cybersécurité applicative.",
+  "areaServed": ["TN", "FR", "EU"],
+  "availableLanguage": ["fr", "en", "ar"],
+  "founder": {
+    "@type": "Person",
+    "name": "Kais Zouali",
+    "jobTitle": "Senior Software Engineer / AI & DevSecOps / Technical Architect",
+    "email": "mailto:kais.zouali@gmail.com",
+    "telephone": "+21620535769",
+    "address": { "@type": "PostalAddress", "addressLocality": "Soukra, Ariana", "addressCountry": "TN" },
+    "alumniOf": [{ "@type": "CollegeOrUniversity", "name": "Grenoble INP — Phelma" }],
+    "sameAs": [
+      "https://www.linkedin.com/in/kais-zouali-tel-20535769/",
+      "https://github.com/kaisz"
+    ],
+    "knowsAbout": ["Intelligence artificielle", "LLM", "RAG", "Java", "Spring Boot", "React", "Angular", "Kubernetes", "DevOps", "Cybersécurité", "Architecture microservices"]
+  }
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Aller au contenu principal</a>
+
+<!-- Sprite d'icônes -->
+<svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-ai" viewBox="0 0 24 24"><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/><circle cx="12" cy="12" r="4.5"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></symbol>
+  <symbol id="i-arch" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 10v4a3 3 0 003 3h4"/><path d="M14 6.5h7"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19a4.5 4.5 0 000-9 6 6 0 00-11.6 1.6A3.7 3.7 0 006.5 19z"/><path d="M12 12v5M9.5 14.5L12 12l2.5 2.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.5l8 3v6c0 5-3.4 8.8-8 10-4.6-1.2-8-5-8-10v-6z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 006.5 6.5L17 13l4 1.5v3a2 2 0 01-2.2 2A16.5 16.5 0 013.5 5.2 2 2 0 015.5 3z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="3"/><path d="M7 10v7M7 7v.01M11.5 17v-4a2.5 2.5 0 015 0v4"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4.5 1.5-4.5-2.5-6.5-3m13 5v-3.9a3.4 3.4 0 00-.9-2.6c3-.3 6.2-1.5 6.2-6.7A5.2 5.2 0 0019.4 3a4.9 4.9 0 00-.1-3.6s-1.1-.3-3.6 1.4a12.4 12.4 0 00-6.6 0C6.6-1 5.5-.6 5.5-.6A4.9 4.9 0 005.4 3 5.2 5.2 0 004 6.8c0 5.2 3.2 6.4 6.2 6.7a3.4 3.4 0 00-.9 2.6V20" transform="translate(0 2)"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3 21l1.5-4.5A8.5 8.5 0 1112 20.5a8.4 8.4 0 01-4.2-1.1z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 8V3h10v5"/><rect x="3" y="8" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/></symbol>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Kais Zouali — accueil">
+      <span class="brand-mark" aria-hidden="true">KZ</span>
+      <span class="brand-text">
+        <strong>Kais Zouali</strong>
+        <em data-i18n="brand.tagline">Ingénieur logiciel indépendant</em>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#services" data-i18n="nav.services">Prestations</a>
+      <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+      <a href="#realisations" data-i18n="nav.work">Réalisations</a>
+      <a href="#parcours" data-i18n="nav.path">Parcours</a>
+      <a href="#contact" class="nav-cta" data-i18n="nav.contact">Me contacter</a>
+    </nav>
+
+    <div class="header-tools">
+      <div class="lang-switch" role="group" aria-label="Langue / Language">
+        <button type="button" data-lang="fr" class="is-active" aria-pressed="true">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="icon-btn" id="theme-toggle" aria-label="Changer de thème">
+        <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+      </button>
+      <button type="button" class="icon-btn burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow reveal">
+        <span class="dot" aria-hidden="true"></span>
+        <span data-i18n="hero.status">Disponible pour de nouvelles missions</span>
+      </p>
+
+      <h1 class="reveal" data-i18n="hero.title">
+        J'aide les entreprises à concevoir,<br>
+        sécuriser et livrer des logiciels
+        <span class="grad">pilotés par l'IA</span>.
+      </h1>
+
+      <p class="lead reveal" data-i18n="hero.lead">
+        Ingénieur logiciel senior indépendant, 16 ans d'expérience entre la France et la Tunisie.
+        J'interviens comme <strong>tech lead</strong>, <strong>architecte</strong> ou <strong>développeur full-stack</strong>
+        sur des projets exigeants&nbsp;: plateformes IA, applications métier critiques, cloud et cybersécurité.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#contact">
+          <span data-i18n="hero.cta1">Discutons de votre projet</span>
+          <svg class="ico"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#services" data-i18n="hero.cta2">Voir les prestations</a>
+      </div>
+
+      <ul class="hero-meta reveal">
+        <li><svg class="ico"><use href="#i-check"/></svg><span data-i18n="hero.meta1">Remote, hybride ou sur site (Grand Tunis)</span></li>
+        <li><svg class="ico"><use href="#i-check"/></svg><span data-i18n="hero.meta2">Régie, forfait ou conseil ponctuel</span></li>
+        <li><svg class="ico"><use href="#i-check"/></svg><span data-i18n="hero.meta3">Français · Anglais · Arabe</span></li>
+      </ul>
+    </div>
+
+    <div class="wrap">
+      <dl class="stats reveal">
+        <div class="stat">
+          <dt data-i18n="stats.1.k">Années d'expérience</dt>
+          <dd><span class="num" data-count="16">16</span>+</dd>
+        </div>
+        <div class="stat">
+          <dt data-i18n="stats.2.k">Missions & entreprises</dt>
+          <dd><span class="num" data-count="20">20</span>+</dd>
+        </div>
+        <div class="stat">
+          <dt data-i18n="stats.3.k">Réduction de coûts cloud obtenue</dt>
+          <dd>−<span class="num" data-count="90">90</span>%</dd>
+        </div>
+        <div class="stat">
+          <dt data-i18n="stats.4.k">Ingénieurs encadrés</dt>
+          <dd><span class="num" data-count="9">9</span></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ══════════════ SERVICES ══════════════ -->
+  <section id="services" class="section">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="kicker" data-i18n="services.kicker">Prestations</p>
+        <h2 data-i18n="services.title">Ce sur quoi vous pouvez me confier votre projet</h2>
+        <p class="section-lead" data-i18n="services.lead">
+          Six domaines, une seule logique&nbsp;: livrer du logiciel qui tient en production —
+          testé, sécurisé, documenté et transmissible à vos équipes.
+        </p>
+      </header>
+
+      <div class="cards">
+        <article class="card reveal">
+          <svg class="card-ico"><use href="#i-ai"/></svg>
+          <h3 data-i18n="svc.1.t">Ingénierie IA & agents</h3>
+          <p data-i18n="svc.1.d">
+            Intégration de LLM et de modèles vision dans vos produits&nbsp;: RAG, agents autonomes,
+            serveurs MCP, OCR, automatisation de la QA. IA hébergée localement quand la
+            confidentialité l'impose.
+          </p>
+          <ul class="tags">
+            <li>OpenAI</li><li>Gemini</li><li>Claude</li><li>LangChain</li><li>Qdrant</li><li>Ollama</li><li>HuggingFace</li><li>MCP</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <svg class="card-ico"><use href="#i-code"/></svg>
+          <h3 data-i18n="svc.2.t">Développement full-stack</h3>
+          <p data-i18n="svc.2.d">
+            Applications métier de bout en bout&nbsp;: back-end Java/Spring ou Node, front React
+            ou Angular, API REST documentées, microservices événementiels. Du prototype
+            à la mise en production.
+          </p>
+          <ul class="tags">
+            <li>Java 21</li><li>Spring Boot</li><li>Quarkus</li><li>React 19</li><li>Angular</li><li>TypeScript</li><li>NestJS</li><li>Python</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <svg class="card-ico"><use href="#i-arch"/></svg>
+          <h3 data-i18n="svc.3.t">Architecture & direction technique</h3>
+          <p data-i18n="svc.3.d">
+            Cadrage d'architecture, choix technologiques argumentés, revue de code, montée
+            en compétence de vos développeurs. Rôle de tech lead ou de CTO à temps partagé
+            pour les structures sans direction technique interne.
+          </p>
+          <ul class="tags">
+            <li data-i18n="svc.3.g1">Microservices</li><li data-i18n="svc.3.g2">Event-driven</li><li>Kafka</li><li>CQRS</li><li>Scrum</li><li data-i18n="svc.3.g3">Revue de code</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <svg class="card-ico"><use href="#i-cloud"/></svg>
+          <h3 data-i18n="svc.4.t">DevOps, Cloud & maîtrise des coûts</h3>
+          <p data-i18n="svc.4.d">
+            Conteneurisation, orchestration Kubernetes, pipelines CI/CD, infrastructure as code
+            et supervision. Optimisation de facture cloud&nbsp;: j'ai déjà divisé par dix
+            le coût d'hébergement d'une plateforme IA.
+          </p>
+          <ul class="tags">
+            <li>Kubernetes</li><li>Helm</li><li>ArgoCD</li><li>Terraform</li><li>Docker</li><li>AWS</li><li>Azure</li><li>Grafana</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <svg class="card-ico"><use href="#i-shield"/></svg>
+          <h3 data-i18n="svc.5.t">Cybersécurité applicative</h3>
+          <p data-i18n="svc.5.d">
+            Audit et correction de failles OWASP, tests d'intrusion, authentification et SSO
+            (Keycloak, OAuth2, MFA), durcissement réseau et TLS. Red teaming de systèmes
+            à base de LLM.
+          </p>
+          <ul class="tags">
+            <li>OWASP</li><li>Keycloak</li><li>OAuth2 / JWT</li><li data-i18n="svc.5.g1">Pentest</li><li>Promptfoo</li><li>DeepTeam</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <svg class="card-ico"><use href="#i-mobile"/></svg>
+          <h3 data-i18n="svc.6.t">Mobile & PWA</h3>
+          <p data-i18n="svc.6.d">
+            Applications iOS et Android natives ou multiplateformes, PWA, intégration
+            Firebase et monétisation. Accompagnement jusqu'à la publication sur les stores.
+          </p>
+          <ul class="tags">
+            <li>Swift</li><li>Kotlin</li><li>Flutter</li><li>Firebase</li><li>PWA</li><li>AdMob</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="engage reveal">
+        <h3 data-i18n="engage.t">Modalités d'intervention</h3>
+        <div class="engage-grid">
+          <div>
+            <h4 data-i18n="engage.1.t">Régie / temps passé</h4>
+            <p data-i18n="engage.1.d">Je rejoins votre équipe pour une durée définie, à temps plein ou partiel. Idéal quand le périmètre évolue.</p>
+          </div>
+          <div>
+            <h4 data-i18n="engage.2.t">Forfait au projet</h4>
+            <p data-i18n="engage.2.d">Périmètre, livrables et budget fixés à l'avance après une phase de cadrage. Idéal pour une application bien délimitée.</p>
+          </div>
+          <div>
+            <h4 data-i18n="engage.3.t">Conseil & audit</h4>
+            <p data-i18n="engage.3.d">Quelques jours pour auditer une architecture, une facture cloud ou la sécurité d'une application, avec un rapport actionnable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ EXPERTISE / STACK ══════════════ -->
+  <section id="expertise" class="section section-alt">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="kicker" data-i18n="stack.kicker">Expertise technique</p>
+        <h2 data-i18n="stack.title">Une stack éprouvée en production</h2>
+        <p class="section-lead" data-i18n="stack.lead">
+          Ces technologies ne sont pas une liste de veille&nbsp;: chacune a servi
+          sur une mission réelle, en production, chez un client.
+        </p>
+      </header>
+
+      <div class="stack-grid">
+        <div class="stack-col reveal">
+          <h3 data-i18n="stack.1.t">Intelligence artificielle</h3>
+          <ul class="pills">
+            <li>OpenAI GPT</li><li>Gemini</li><li>Claude</li><li>Llama</li><li>Mistral</li><li>Qwen VL</li>
+            <li>LangChain</li><li>RAG</li><li>Qdrant</li><li>MCP servers</li><li>HuggingFace</li>
+            <li>Ollama</li><li>LM Studio</li><li>OCR</li><li>OpenCV</li><li>TensorFlow</li>
+          </ul>
+        </div>
+        <div class="stack-col reveal">
+          <h3 data-i18n="stack.2.t">Back-end</h3>
+          <ul class="pills">
+            <li>Java 8→21</li><li>Spring Boot</li><li>Spring Security</li><li>Quarkus</li><li>Hibernate / JPA</li>
+            <li>Node.js</li><li>NestJS</li><li>Express</li><li>Python</li><li>FastAPI</li><li>SQLAlchemy</li>
+            <li>Kafka</li><li>RabbitMQ</li><li>Redis</li><li>Drools</li><li>Maven / Gradle</li>
+          </ul>
+        </div>
+        <div class="stack-col reveal">
+          <h3 data-i18n="stack.3.t">Front-end & mobile</h3>
+          <ul class="pills">
+            <li>React 19</li><li>Angular</li><li>TypeScript</li><li>Vite</li><li>Tailwind</li><li>HTML / CSS</li>
+            <li>Micro front-ends</li><li>Swift / iOS</li><li>Kotlin / Android</li><li>Flutter</li><li>PWA</li><li>Figma</li>
+          </ul>
+        </div>
+        <div class="stack-col reveal">
+          <h3 data-i18n="stack.4.t">Données</h3>
+          <ul class="pills">
+            <li>PostgreSQL</li><li>PostGIS</li><li>Oracle DB</li><li>SQL Server</li><li>MySQL</li>
+            <li>MongoDB</li><li>Prisma</li><li>Liquibase / Flyway</li><li>Alembic</li><li>MinIO / S3</li><li>Supabase</li>
+          </ul>
+        </div>
+        <div class="stack-col reveal">
+          <h3 data-i18n="stack.5.t">Cloud & DevOps</h3>
+          <ul class="pills">
+            <li>Kubernetes</li><li>Helm</li><li>ArgoCD</li><li>Docker / Podman</li><li>Terraform</li>
+            <li>AWS</li><li>Azure</li><li>Hetzner</li><li>OVH</li><li>Cloudflare</li>
+            <li>GitLab CI</li><li>GitHub Actions</li><li>Jenkins</li><li>Nginx</li><li>Prometheus</li><li>Grafana</li><li>Loki</li>
+          </ul>
+        </div>
+        <div class="stack-col reveal">
+          <h3 data-i18n="stack.6.t">Sécurité & qualité</h3>
+          <ul class="pills">
+            <li>OWASP</li><li>Keycloak</li><li>OAuth2 / JWT</li><li>SSO / MFA</li><li>Entra ID</li>
+            <li>TLS</li><li>Rate limiting</li><li>Wireshark</li><li>nmap</li><li>Nessus</li>
+            <li>SonarQube</li><li>JUnit</li><li>Vitest</li><li>Playwright</li><li>Cucumber</li><li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ RÉALISATIONS ══════════════ -->
+  <section id="realisations" class="section">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="kicker" data-i18n="work.kicker">Réalisations</p>
+        <h2 data-i18n="work.title">Quelques projets représentatifs</h2>
+        <p class="section-lead" data-i18n="work.lead">
+          De l'administration publique à l'aérien, de l'industrie à la santé —
+          des contextes où l'erreur coûte cher.
+        </p>
+      </header>
+
+      <div class="work-grid">
+        <article class="work reveal">
+          <div class="work-top">
+            <h3>Motori</h3>
+            <span class="year">2026</span>
+          </div>
+          <p class="work-role" data-i18n="work.1.r">Application mobile · Freelance</p>
+          <p data-i18n="work.1.d">
+            Application d'entretien et d'estimation de prix pour motos, développée en natif
+            iOS et Android ainsi qu'en Flutter, avec assistance IA pour le diagnostic
+            et monétisation AdMob.
+          </p>
+          <ul class="tags">
+            <li>Swift</li><li>Kotlin</li><li>Flutter</li><li>Firebase</li><li>Gemini</li>
+          </ul>
+          <p class="work-links">
+            <a href="https://github.com/kaisz" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://apkpure.com/p/tn.com.motori.app" target="_blank" rel="noopener noreferrer">APKPure</a>
+          </p>
+        </article>
+
+        <article class="work reveal">
+          <div class="work-top">
+            <h3>MindState AI</h3>
+            <span class="year">2025–2026</span>
+          </div>
+          <p class="work-role" data-i18n="work.2.r">Tech lead IA · Plateforme SaaS</p>
+          <p data-i18n="work.2.d">
+            Direction technique d'une plateforme d'IA : encadrement de 9 personnes, mise en place
+            d'agents d'automatisation QA, et migration d'Azure vers Hetzner ayant réduit
+            la facture d'hébergement de plus de 90&nbsp;%.
+          </p>
+          <ul class="tags">
+            <li>React 19</li><li>NestJS</li><li>FastAPI</li><li>Qdrant</li><li>Kubernetes</li><li>Terraform</li>
+          </ul>
+          <p class="work-links">
+            <a href="https://mindstate.tech" target="_blank" rel="noopener noreferrer">mindstate.tech</a>
+          </p>
+        </article>
+
+        <article class="work reveal">
+          <div class="work-top">
+            <h3 data-i18n="work.3.t">Douane tunisienne</h3>
+            <span class="year">2026</span>
+          </div>
+          <p class="work-role" data-i18n="work.3.r">Lead full-stack IA · BNS Engineering &amp; NetCompany</p>
+          <p data-i18n="work.3.d">
+            Application métier pour l'administration douanière, construite avec l'appui d'agents IA :
+            back-end Java/Spring, front React, authentification Keycloak, bus Kafka,
+            déploiement Kubernetes supervisé.
+          </p>
+          <ul class="tags">
+            <li>Java</li><li>Spring</li><li>React</li><li>Oracle</li><li>Kafka</li><li>ArgoCD</li>
+          </ul>
+        </article>
+
+        <article class="work reveal">
+          <div class="work-top">
+            <h3>WiseShare</h3>
+            <span class="year">2025</span>
+          </div>
+          <p class="work-role" data-i18n="work.4.r">Développeur full-stack</p>
+          <p data-i18n="work.4.d">
+            Plateforme de partage de fichiers sécurisée : chiffrement des échanges,
+            authentification multifacteur, stockage objet privé et infrastructure conteneurisée.
+          </p>
+          <ul class="tags">
+            <li>React 19</li><li>NestJS</li><li>Prisma</li><li>Keycloak MFA</li><li>MinIO</li>
+          </ul>
+        </article>
+
+        <article class="work reveal">
+          <div class="work-top">
+            <h3>Air France-KLM</h3>
+            <span class="year">2017–2018</span>
+          </div>
+          <p class="work-role" data-i18n="work.5.r">Ingénieur Java JEE · via Groupe SII</p>
+          <p data-i18n="work.5.d">
+            Refonte des applications de réservation de billets (particuliers et groupes) et
+            migration vers de nouveaux fournisseurs de gestion des dossiers passagers (PNR),
+            à Sophia Antipolis.
+          </p>
+          <ul class="tags">
+            <li>Java JEE</li><li>Spring</li><li>Struts</li><li>Web services</li><li>Bamboo</li>
+          </ul>
+        </article>
+
+        <article class="work reveal">
+          <div class="work-top">
+            <h3>4G Technology</h3>
+            <span class="year">2010–2016</span>
+          </div>
+          <p class="work-role" data-i18n="work.6.r">Ingénieur développement · Vidéosurveillance embarquée</p>
+          <p data-i18n="work.6.d">
+            Solution complète de vidéosurveillance nomade géolocalisée : suite d'applications de
+            pilotage en Java, application Android, serveur web de gestion de parc, et système
+            Linux embarqué 3G/4G avec enregistreur vidéo temps réel.
+          </p>
+          <ul class="tags">
+            <li>Java</li><li>C / C++</li><li>Gstreamer</li><li>Android</li><li>PHP</li><li>Linux embarqué</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="sectors reveal">
+        <span data-i18n="work.sectors">Secteurs déjà servis&nbsp;:</span>
+        <b data-i18n="work.sectorList">administration publique · aérien · santé · logistique &amp; transports publics · industrie · fintech · cybersécurité · IoT · télécoms</b>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════ PARCOURS ══════════════ -->
+  <section id="parcours" class="section section-alt">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="kicker" data-i18n="path.kicker">Parcours</p>
+        <h2 data-i18n="path.title">16 ans d'ingénierie, de Grenoble à Tunis</h2>
+        <p class="section-lead" data-i18n="path.lead">
+          Diplômé ingénieur de Grenoble INP — Phelma, j'ai commencé par le traitement d'images
+          et l'embarqué en France, avant de me spécialiser dans les plateformes web, le cloud,
+          puis l'IA appliquée.
+        </p>
+      </header>
+
+      <ol class="timeline">
+        <li class="tl reveal">
+          <span class="tl-date">2026 — <span data-i18n="path.now">aujourd'hui</span></span>
+          <h3>Technical Lead — Inetum</h3>
+          <p data-i18n="path.1.d">Mission freelance de direction technique, développement assisté par agents IA.</p>
+        </li>
+        <li class="tl reveal">
+          <span class="tl-date">2026</span>
+          <h3>AI Full-Stack Lead — BNS Engineering</h3>
+          <p data-i18n="path.2.d">Application pour la Douane tunisienne, en partenariat avec NetCompany. Java, Spring, React, Kubernetes.</p>
+        </li>
+        <li class="tl reveal">
+          <span class="tl-date">2026</span>
+          <h3>AI Technical Lead — Preemptics</h3>
+          <p data-i18n="path.3.d">Red teaming de systèmes à base de LLM (DeepTeam, Promptfoo), référentiel OWASP pour agents IA.</p>
+        </li>
+        <li class="tl reveal">
+          <span class="tl-date">2025 — 2026</span>
+          <h3>AI Technical Lead — MindState AI</h3>
+          <p data-i18n="path.4.d">Encadrement de 9 personnes, architecture de la plateforme, migration cloud (−90 % de coûts), exposant à la Foire méditerranéenne de l'IA.</p>
+        </li>
+        <li class="tl reveal">
+          <span class="tl-date">2024 — 2025</span>
+          <h3>Full-Stack Java / DevSecOps — Naxxum Group</h3>
+          <p data-i18n="path.5.d">Applications santé, logistique et transports publics. Développement Java/Spring/React, tests d'intrusion, DevOps Azure, PWA.</p>
+        </li>
+        <li class="tl reveal">
+          <span class="tl-date">2024</span>
+          <h3>Technical Lead — SlashUp Studio</h3>
+          <p data-i18n="path.6.d">Architecture d'une plateforme low-code événementielle, microservices, correction de failles de sécurité, génération de code.</p>
+        </li>
+        <li class="tl reveal">
+          <span class="tl-date">2023 — 2024</span>
+          <h3>Senior Engineer — Intedgroup</h3>
+          <p data-i18n="path.7.d">Application CRM/ERP : gestion de projet, responsabilité technique, assurance qualité et exploitation des serveurs.</p>
+        </li>
+
+        <li class="tl reveal is-more" hidden>
+          <span class="tl-date">2023</span>
+          <h3>Senior Software Development Engineer — Venari Security</h3>
+          <p data-i18n="path.8.d">Application de cybersécurité : API REST Java, interfaces React, scripting Linux, qualité de code Sonar Cloud.</p>
+        </li>
+        <li class="tl reveal is-more" hidden>
+          <span class="tl-date">2023</span>
+          <h3>Software Designer — ACTIA Engineering Services</h3>
+          <p data-i18n="path.9.d">Développement bas niveau et outillage pour l'électronique embarquée (STM32, microcontrôleurs).</p>
+        </li>
+        <li class="tl reveal is-more" hidden>
+          <span class="tl-date">2023</span>
+          <h3>Senior Engineer — HandsOn Systems</h3>
+          <p data-i18n="path.10.d">Application de réservation de taxis déployée à Malte. Java, Spring Boot, PostgreSQL, AWS.</p>
+        </li>
+        <li class="tl reveal is-more" hidden>
+          <span class="tl-date">2022 — 2023</span>
+          <h3>Senior Full-Stack Engineer — Integration Objects</h3>
+          <p data-i18n="path.11.d">Application industrielle : microservice ETL Java, moteur de règles, interfaces Angular, tests de charge, protocoles OPC et Modbus.</p>
+        </li>
+        <li class="tl reveal is-more" hidden>
+          <span class="tl-date">2021</span>
+          <h3 data-i18n="path.12.t">Ingénieur développement — M&amp;C IT Consulting</h3>
+          <p data-i18n="path.12.d">Application de paiement dans le domaine aérien, stack MEAN, gestion de projet et formation des stagiaires.</p>
+        </li>
+        <li class="tl reveal is-more" hidden>
+          <span class="tl-date">2020</span>
+          <h3>Senior Software Developer — iTes Lab</h3>
+          <p data-i18n="path.13.d">Solution de réservation de salles de réunion : architecture API REST, DevOps, revue de code et CI/CD.</p>
+        </li>
+        <li class="tl reveal is-more" hidden>
+          <span class="tl-date">2019</span>
+          <h3>Senior Software Engineer — machinestalk</h3>
+          <p data-i18n="path.14.d">Plateforme IoT de gestion de véhicules : API Java, interfaces Angular, intégration Kafka.</p>
+        </li>
+        <li class="tl reveal is-more" hidden>
+          <span class="tl-date">2017 — 2018</span>
+          <h3 data-i18n="path.15.t">Ingénieur Java JEE — Air France-KLM / Groupe SII</h3>
+          <p data-i18n="path.15.d">Réservation de billets et gestion des PNR pour Air France ; auparavant, application de monnaie électronique pour Roberto Giori Company.</p>
+        </li>
+        <li class="tl reveal is-more" hidden>
+          <span class="tl-date">2010 — 2016</span>
+          <h3 data-i18n="path.16.t">Ingénieur développement — 4G Technology</h3>
+          <p data-i18n="path.16.d">Six ans sur une solution de vidéosurveillance nomade : applications de pilotage Java, Android, serveur web, système Linux embarqué et streaming vidéo.</p>
+        </li>
+        <li class="tl reveal is-more" hidden>
+          <span class="tl-date">2010</span>
+          <h3 data-i18n="path.17.t">Stage traitement d'images — Trixell</h3>
+          <p data-i18n="path.17.d">Algorithmes de détection de défauts dans des images cliniques, à Grenoble.</p>
+        </li>
+      </ol>
+
+      <button type="button" class="btn btn-ghost btn-more" id="more-btn" data-i18n="path.more">Voir tout le parcours (10 postes de plus)</button>
+
+      <div class="edu reveal">
+        <h3 data-i18n="edu.t">Formation</h3>
+        <ul class="edu-list">
+          <li>
+            <strong>Grenoble INP — Phelma</strong>
+            <span data-i18n="edu.1">Diplôme d'ingénieur — Systèmes et microsystèmes pour la physique et les biotechnologies · 2007–2010</span>
+          </li>
+          <li>
+            <strong>Grenoble INP — Phelma</strong>
+            <span data-i18n="edu.2">Master (double cursus) — Signal, Image, Parole, Télécom · 2009–2010</span>
+          </li>
+          <li>
+            <strong>IPEST, La Marsa</strong>
+            <span data-i18n="edu.3">Classes préparatoires — Mathématiques, physique, sciences industrielles · 2005–2007</span>
+          </li>
+          <li>
+            <strong>Lycée Pilote de Sfax</strong>
+            <span data-i18n="edu.4">Baccalauréat Mathématiques — mention Très Bien (18,31/20) · 2005</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section id="contact" class="section section-contact">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="kicker" data-i18n="contact.kicker">Contact</p>
+        <h2 data-i18n="contact.title">Parlons de votre projet</h2>
+        <p class="section-lead" data-i18n="contact.lead">
+          Décrivez-moi votre besoin en quelques lignes. Je réponds sous 24&nbsp;heures ouvrées
+          avec une première lecture technique — gratuite et sans engagement.
+        </p>
+      </header>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="f-name" data-i18n="form.name">Nom / société</label>
+            <input id="f-name" name="name" type="text" autocomplete="organization" required>
+          </div>
+          <div class="field">
+            <label for="f-email" data-i18n="form.email">Votre email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-subject" data-i18n="form.need">Type de besoin</label>
+            <select id="f-subject" name="subject">
+              <option data-i18n="form.opt1">Ingénierie IA & agents</option>
+              <option data-i18n="form.opt2">Développement full-stack</option>
+              <option data-i18n="form.opt3">Architecture / direction technique</option>
+              <option data-i18n="form.opt4">DevOps, cloud & coûts</option>
+              <option data-i18n="form.opt5">Cybersécurité & audit</option>
+              <option data-i18n="form.opt6">Application mobile</option>
+              <option data-i18n="form.opt7">Autre / je ne sais pas encore</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg" data-i18n="form.msg">Votre projet</label>
+            <textarea id="f-msg" name="message" rows="6" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">
+            <span data-i18n="form.send">Envoyer par email</span>
+            <svg class="ico"><use href="#i-arrow"/></svg>
+          </button>
+          <p class="form-note" data-i18n="form.note">
+            Ce bouton ouvre votre logiciel de messagerie avec le message pré-rempli.
+            Aucune donnée n'est stockée sur ce site.
+          </p>
+        </form>
+
+        <aside class="contact-side reveal">
+          <a class="contact-link" id="link-mail" href="mailto:kais.zouali@gmail.com">
+            <svg class="ico"><use href="#i-mail"/></svg>
+            <span><b data-i18n="contact.mail">Email</b>kais.zouali@gmail.com</span>
+          </a>
+          <a class="contact-link" id="link-tel" href="#">
+            <svg class="ico"><use href="#i-phone"/></svg>
+            <span><b data-i18n="contact.tel">Téléphone</b><span data-phone-display>—</span></span>
+          </a>
+          <a class="contact-link" id="link-wa" href="#" target="_blank" rel="noopener noreferrer">
+            <svg class="ico"><use href="#i-whatsapp"/></svg>
+            <span><b>WhatsApp</b><span data-i18n="contact.waSub">Réponse rapide</span></span>
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/kais-zouali-tel-20535769/" target="_blank" rel="noopener noreferrer">
+            <svg class="ico"><use href="#i-linkedin"/></svg>
+            <span><b>LinkedIn</b><span data-i18n="contact.liSub">Parcours détaillé & recommandations</span></span>
+          </a>
+          <a class="contact-link" href="https://github.com/kaisz" target="_blank" rel="noopener noreferrer">
+            <svg class="ico"><use href="#i-github"/></svg>
+            <span><b>GitHub</b>github.com/kaisz</span>
+          </a>
+
+          <div class="contact-facts">
+            <p><b data-i18n="contact.loc">Localisation</b><span data-i18n="contact.locV">Soukra, Ariana — Tunisie</span></p>
+            <p><b data-i18n="contact.mode">Modes</b><span data-i18n="contact.modeV">À distance, hybride ou sur site</span></p>
+            <p><b data-i18n="contact.lang">Langues</b><span data-i18n="contact.langV">Français, anglais, arabe</span></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> Kais Zouali — <span data-i18n="footer.status">Ingénieur logiciel indépendant, Tunisie</span></p>
+    <div class="footer-links">
+      <button type="button" class="linkish" id="print-btn">
+        <svg class="ico"><use href="#i-print"/></svg>
+        <span data-i18n="footer.print">Imprimer / PDF</span>
+      </button>
+      <a href="#top" data-i18n="footer.top">Haut de page</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
