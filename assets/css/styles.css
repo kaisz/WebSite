@@ -178,7 +178,9 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
 [data-theme="light"] #theme-toggle .ico-sun  { display: block; }
 [data-theme="light"] #theme-toggle .ico-moon { display: none; }
 
-.burger { display: none; flex-direction: column; gap: 4px; }
+/* En flex colonne, le place-items: center herite de .icon-btn ne centre que
+   l'axe horizontal : justify-content est indispensable pour l'axe vertical. */
+.burger { display: none; flex-direction: column; justify-content: center; gap: 4px; }
 .burger span {
   width: 17px; height: 1.8px; background: currentColor; border-radius: 2px;
   transition: transform .25s, opacity .2s;
