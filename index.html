@@ -213,7 +213,7 @@
           </li>
           <li class="pillar reveal">
             <svg class="card-ico"><use href="#i-arch"/></svg>
-            <h3 data-i18n="about.2.t">Architecture & full-stack</h3>
+            <h3 data-i18n="about.2.t">Architecture logicielle & full-stack</h3>
             <p data-i18n="about.2.d">
               Java 25 et Spring, Angular 21 et React 19, microservices hexagonaux orientés
               événements, CQRS, workflows Temporal. Conception d'API ouvertes, documentées et sécurisées.
@@ -273,7 +273,7 @@
 
         <article class="card reveal">
           <svg class="card-ico"><use href="#i-arch"/></svg>
-          <h3 data-i18n="svc.3.t">Architecture & direction technique</h3>
+          <h3 data-i18n="svc.3.t">Architecture logicielle & direction technique</h3>
           <p data-i18n="svc.3.d">
             Cadrage d'architecture, choix technologiques argumentés, revue de code, montée
             en compétence de vos développeurs. Rôle de tech lead ou de CTO à temps partagé
@@ -383,7 +383,7 @@
           <h3 data-i18n="stack.4.t">Données</h3>
           <ul class="pills">
             <li>PostgreSQL</li><li>PostGIS</li><li>Oracle DB</li><li>SQL Server</li><li>MySQL</li>
-            <li>MongoDB</li><li>Prisma</li><li>Liquibase / Flyway</li><li>Alembic</li><li>MinIO / S3</li><li>Supabase</li>
+            <li>MongoDB</li><li>Prisma</li><li>Liquibase / Flyway</li><li>Alembic</li><li>MinIO / S3</li><li>Supabase</li><li>ETL / ELT</li>
           </ul>
         </div>
         <div class="stack-col reveal">
@@ -414,7 +414,7 @@
         <ul class="pills pills-muted">
           <li>Ansible</li><li>Azure Bicep</li><li>CloudFormation</li><li>EventBridge</li>
           <li>Apache Spark</li><li>Flink</li><li>Beam</li><li>Airflow</li><li>MLflow</li>
-          <li>NumPy</li><li>PyTorch</li><li>ETL / ELT</li>
+          <li>NumPy</li><li>PyTorch</li>
           <li>Google Cloud</li><li>GKE</li><li>BigQuery</li><li>BigTable</li><li>Dataflow</li><li>Pub/Sub</li>
           <li>Power BI</li>
         </ul>
@@ -700,7 +700,7 @@
             <select id="f-subject" name="subject">
               <option data-i18n="form.opt1">Ingénierie IA & agents</option>
               <option data-i18n="form.opt2">Développement full-stack</option>
-              <option data-i18n="form.opt3">Architecture / direction technique</option>
+              <option data-i18n="form.opt3">Architecture logicielle / direction technique</option>
               <option data-i18n="form.opt4">DevOps, cloud & coûts</option>
               <option data-i18n="form.opt5">Cybersécurité & audit</option>
               <option data-i18n="form.opt6">Application mobile</option>
@@ -728,7 +728,11 @@
           </a>
           <a class="contact-link" id="link-tel" href="#">
             <svg class="ico"><use href="#i-phone"/></svg>
-            <span><b data-i18n="contact.tel">Téléphone</b><span data-phone-display>—</span></span>
+            <!-- dir="ltr" : un numero international ("+216 20 535 769") est une
+                 suite de groupes de chiffres separes par des espaces, tous
+                 neutres pour l'algorithme bidirectionnel. En contexte arabe il
+                 s'affichait a l'envers ("769 535 20 216+"). -->
+            <span><b data-i18n="contact.tel">Téléphone</b><span data-phone-display dir="ltr">—</span></span>
           </a>
           <a class="contact-link" id="link-wa" href="#" target="_blank" rel="noopener noreferrer">
             <svg class="ico"><use href="#i-whatsapp"/></svg>
