@@ -106,9 +106,37 @@ Suivi des déploiements : onglet *Actions* du dépôt.
 
 **Pourquoi le français est écrit en dur dans le HTML.**
 Le contenu français se trouve directement dans `index.html`, donc lisible par les
-moteurs de recherche sans exécution de JavaScript. `i18n.js` ne contient que la
-surcouche anglaise, appliquée au clic sur `EN` via les attributs `data-i18n`.
+moteurs de recherche sans exécution de JavaScript. `i18n.js` ne contient que les
+surcouches anglaise et arabe, appliquées au clic via les attributs `data-i18n`.
 Le texte français d'origine est mis en cache côté client pour permettre l'aller-retour.
+Les 154 clés sont couvertes dans les deux langues, sans clé manquante ni orpheline.
+
+**Arabe et sens d'écriture.**
+Le bouton `ع` pose `lang="ar"` et `dir="rtl"` sur `<html>`. La feuille de style
+utilise des propriétés logiques (`padding-inline-start`, `inset-inline-start`,
+`text-align: end`) pour que la mise en page se retourne d'elle-même, plus un bloc
+dédié pour ce qui ne se déduit pas :
+
+- pile de polices arabes système, sans police distante ;
+- crénage remis à `normal` — le resserrement négatif casse les ligatures cursives ;
+- capitales supprimées, sans objet en arabe ;
+- flèches retournées via `scaleX(-1)` pour suivre le sens de lecture ;
+- étiquettes techniques traduites sorties du monospace, police sans glyphe arabe.
+
+**Le piège des plages d'années en arabe.**
+Dans un paragraphe RTL, le tiret de `2010–2016` est un caractère neutre : il prend
+la direction du paragraphe, sépare les deux nombres en deux séquences, et celles-ci
+sont ordonnées de droite à gauche — affichant `2016–2010`. Même effet sur le signe
+moins de `−90 %`. Ces valeurs sont donc isolées en `direction: ltr` +
+`unicode-bidi: isolate`, tout en restant collées au bord de départ. Les libellés
+arabes commençant par un chiffre ont par ailleurs été reformulés en lettres, et les
+dates de formation placées entre parenthèses, que l'algorithme met correctement en miroir.
+
+**Séparation entre production et veille.**
+La section « expertise » affirme que chaque technologie a servi en production chez
+un client. Les domaines encore en autoformation (Spark, PyTorch, BigQuery, Power BI…)
+sont donc rassemblés dans un bloc distinct et explicitement étiqueté comme tel,
+plutôt que mélangés à la liste principale.
 
 **Pourquoi pas d'IntersectionObserver.**
 Les animations d'apparition reposent sur `getBoundingClientRect` plutôt que sur

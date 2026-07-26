@@ -51,16 +51,28 @@
   })();
 
   /* ---------- Langue ---------- */
+  var LANGS = I18N.langs || ["fr", "en", "ar"];
+  var OG_LOCALES = { fr: "fr_FR", en: "en_US", ar: "ar_TN" };
+
   function t(key) {
     var pack = (I18N.ui && I18N.ui[lang]) || {};
     return pack[key] !== undefined ? pack[key] : key;
   }
 
   function applyLang(next) {
-    lang = next === "en" ? "en" : "fr";
+    lang = LANGS.indexOf(next) > -1 ? next : "fr";
     root.lang = lang;
 
-    var dict = lang === "en" ? (I18N.en || {}) : null;
+    // L'arabe s'ecrit de droite a gauche : dir sur <html> suffit, la
+    // feuille de style utilise des proprietes logiques.
+    root.dir = (I18N.dir && I18N.dir[lang]) || "ltr";
+
+    var ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale) ogLocale.setAttribute("content", OG_LOCALES[lang] || "fr_FR");
+
+    // Le francais est la source ecrite dans le HTML : aucun dictionnaire,
+    // on restaure simplement le texte d'origine mis en cache.
+    var dict = lang === "fr" ? null : (I18N[lang] || {});
 
     $$("[data-i18n]").forEach(function (el) {
       var key = el.getAttribute("data-i18n");
@@ -103,7 +115,10 @@
     var stored = null;
     try { stored = localStorage.getItem("kz-lang"); } catch (e) {}
     if (!stored) {
-      stored = (navigator.language || "fr").toLowerCase().indexOf("fr") === 0 ? "fr" : "en";
+      var pref = (navigator.language || "fr").toLowerCase();
+      stored = pref.indexOf("ar") === 0 ? "ar"
+             : pref.indexOf("fr") === 0 ? "fr"
+             : "en";
     }
 
     $$(".lang-switch button").forEach(function (b) {
@@ -135,7 +150,7 @@
       if (e.key === "Escape") setOpen(false);
     });
     window.addEventListener("resize", function () {
-      if (window.innerWidth > 820) setOpen(false);
+      if (window.innerWidth > 900) setOpen(false);
     });
   })();
 

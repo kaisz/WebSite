@@ -1,13 +1,24 @@
 /* ============================================================
-   Traductions anglaises.
+   Traductions anglaises et arabes.
+
    Le français est écrit directement dans index.html : il reste
    donc lisible par les moteurs de recherche sans exécuter de JS.
-   Ce fichier ne contient que la surcouche EN.
+   Ce fichier ne contient que les surcouches EN et AR.
+
+   L'arabe s'écrit de droite à gauche : main.js pose dir="rtl"
+   sur <html>, et styles.css utilise des propriétés logiques
+   pour que la mise en page se retourne d'elle-même.
    ============================================================ */
 
 window.I18N = {
 
-  /* Textes d'interface utilisés par main.js (non présents dans le HTML) */
+  /* Langues déclarées, dans l'ordre d'affichage du sélecteur */
+  langs: ["fr", "en", "ar"],
+
+  /* Sens d'écriture par langue */
+  dir: { fr: "ltr", en: "ltr", ar: "rtl" },
+
+  /* Textes d'interface utilisés par main.js (absents du HTML) */
   ui: {
     fr: {
       menuOpen:    "Ouvrir le menu",
@@ -36,10 +47,24 @@ window.I18N = {
       mailBody:    "Project",
       moreShow:    "Show full career history (10 more roles)",
       moreHide:    "Collapse career history"
+    },
+    ar: {
+      menuOpen:    "فتح القائمة",
+      menuClose:   "إغلاق القائمة",
+      theme:       "تغيير المظهر",
+      required:    "يُرجى تعبئة الحقول الإلزامية.",
+      badEmail:    "لا يبدو عنوان البريد الإلكتروني صحيحًا.",
+      opened:      "من المفترض أن يُفتح برنامج البريد لديك. إن لم يحدث شيء، اكتب مباشرةً إلى kais.zouali@gmail.com.",
+      mailSubject: "طلب خدمة",
+      mailFrom:    "من",
+      mailNeed:    "الحاجة",
+      mailBody:    "المشروع",
+      moreShow:    "عرض المسار المهني كاملًا (10 مناصب إضافية)",
+      moreHide:    "تقليص المسار المهني"
     }
   },
 
-  /* Surcouche anglaise du contenu de la page */
+  /* ══════════════════════════ ANGLAIS ══════════════════════════ */
   en: {
     "meta.title":       "Kais Zouali — Senior freelance software engineer · AI, Full-Stack, DevSecOps",
     "meta.description": "Independent senior software engineer: AI & agent engineering, Java/Spring & React full-stack development, microservice architecture, DevOps/Kubernetes and application security. 16 years of experience, Tunisia & Europe, remote or on site.",
@@ -49,6 +74,7 @@ window.I18N = {
 
     "brand.tagline": "Independent software engineer",
 
+    "nav.about":     "Profile",
     "nav.services":  "Services",
     "nav.expertise": "Expertise",
     "nav.work":      "Work",
@@ -68,6 +94,21 @@ window.I18N = {
     "stats.2.k": "Engagements & companies",
     "stats.3.k": "Cloud cost reduction delivered",
     "stats.4.k": "Engineers managed",
+
+    "about.kicker": "Profile",
+    "about.title":  "Three disciplines in one profile",
+    "about.lead":   "AI/LLM research and development engineer, technical architect, and electronic systems and microsystems engineer. That combination is uncommon: it lets one person follow a project from the sensor all the way to the dashboard.",
+    "about.p1":     "Sixteen years of experience, <strong>eight of them in France</strong> — Air France-KLM, the Thales group via Trixell, Groupe SII in Sophia Antipolis — and <strong>eight in Tunisia</strong>, from industrial software to public administration.",
+    "about.p2":     "I don't stop at writing code: product definition, project management, Scrum and quality assurance are part of the engagement. The goal is that when it ends, your team can carry the project on without me.",
+    "about.f1":     "8 years in France · 8 years in Tunisia",
+    "about.f2":     "Product definition, project management, Scrum, QA",
+    "about.f3":     "Engineering graduate of Grenoble INP — Phelma",
+    "about.1.t":    "AI & language models",
+    "about.1.d":    "AI agents, language and vision models — Gemini, GPT-5.x, Qwen 3 VL up to 235B. Assisted development (Cursor, SpecDD) and shipping systems that are genuinely used.",
+    "about.2.t":    "Architecture & full-stack",
+    "about.2.d":    "Java 25 and Spring, Angular 21 and React 19, event-driven hexagonal microservices, CQRS, Temporal workflows. Open, documented and secured API design.",
+    "about.3.t":    "Electronics & embedded",
+    "about.3.d":    "A graduate in systems and microsystems: microcontrollers, STM32, industrial Linux. Decisive when software has to talk to real hardware.",
 
     "services.kicker": "Services",
     "services.title":  "What you can hand over to me",
@@ -101,12 +142,17 @@ window.I18N = {
     "stack.kicker": "Technical expertise",
     "stack.title":  "A stack proven in production",
     "stack.lead":   "This is not a reading list: every one of these has been used on a real engagement, in production, for a client.",
-    "stack.1.t": "Artificial intelligence",
-    "stack.2.t": "Back end",
-    "stack.3.t": "Front end & mobile",
-    "stack.4.t": "Data",
-    "stack.5.t": "Cloud & DevOps",
-    "stack.6.t": "Security & quality",
+    "stack.1.t":  "Artificial intelligence",
+    "stack.1.g1": "AI agents",
+    "stack.2.t":  "Back end",
+    "stack.3.t":  "Front end & mobile",
+    "stack.3.g1": "Micro front-ends",
+    "stack.4.t":  "Data",
+    "stack.5.t":  "Cloud & DevOps",
+    "stack.6.t":  "Security & quality",
+
+    "watch.t": "Learning and keeping current",
+    "watch.d": "These interest me and I practise them on my own time, but I have not yet delivered them in production for a client. I would rather say so than blend them into the list above.",
 
     "work.kicker": "Selected work",
     "work.title":  "A few representative projects",
@@ -191,5 +237,187 @@ window.I18N = {
     "footer.status": "Independent software engineer, Tunisia",
     "footer.print":  "Print / PDF",
     "footer.top":    "Back to top"
+  },
+
+  /* ══════════════════════════ ARABE ══════════════════════════ */
+  ar: {
+    "meta.title":       "قيس الزوالي — مهندس برمجيات أول مستقل · الذكاء الاصطناعي، تطوير متكامل، DevSecOps",
+    "meta.description": "مهندس برمجيات أول مستقل: هندسة الذكاء الاصطناعي والوكلاء الأذكياء، تطوير متكامل بـ Java/Spring وReact، معمارية الخدمات المصغّرة، DevOps وKubernetes، وأمن التطبيقات. ستة عشر عامًا من الخبرة بين تونس وأوروبا، عن بُعد أو في الموقع.",
+    "meta.ogTitle":     "قيس الزوالي — مهندس برمجيات أول مستقل",
+
+    "a11y.skip": "الانتقال إلى المحتوى الرئيسي",
+
+    "brand.tagline": "مهندس برمجيات مستقل",
+
+    "nav.about":     "نبذة",
+    "nav.services":  "الخدمات",
+    "nav.expertise": "الخبرات",
+    "nav.work":      "الأعمال",
+    "nav.path":      "المسار المهني",
+    "nav.contact":   "تواصل معي",
+
+    "hero.status": "متاح لمهام جديدة",
+    /* Pas de <br> ici : le titre arabe est plus long que le francais et une
+       coupure forcee produit des lignes tres inegales. On laisse couler. */
+    "hero.title":  "أساعد الشركات على تصميم البرمجيات وتأمينها وتسليمها <span class=\"grad\">بقيادة الذكاء الاصطناعي</span>.",
+    "hero.lead":   "مهندس برمجيات أول مستقل، بخبرة ستة عشر عامًا بين فرنسا وتونس. أتدخّل بصفة <strong>قائد تقني</strong> أو <strong>مهندس معماري</strong> أو <strong>مطوّر متكامل</strong> في المشاريع الدقيقة: منصّات الذكاء الاصطناعي، والتطبيقات الحيوية، والحوسبة السحابية، والأمن السيبراني.",
+    "hero.cta1":   "لنتحدّث عن مشروعك",
+    "hero.cta2":   "استعراض الخدمات",
+    "hero.meta1":  "عن بُعد، أو بنظام مختلط، أو في الموقع (تونس الكبرى)",
+    "hero.meta2":  "بالوقت المستغرق، أو بمقابل جزافي، أو استشارة ظرفية",
+    "hero.meta3":  "الفرنسية · الإنجليزية · العربية",
+
+    "stats.1.k": "سنوات الخبرة",
+    "stats.2.k": "المهام والشركات",
+    "stats.3.k": "تخفيض في كلفة الاستضافة السحابية",
+    "stats.4.k": "مهندسون تحت إشرافي",
+
+    "about.kicker": "نبذة",
+    "about.title":  "ثلاث مِهَن في ملف واحد",
+    "about.lead":   "مهندس دراسات وتطوير في الذكاء الاصطناعي ونماذج اللغة، ومهندس معماري تقني، ومهندس أنظمة وأنظمة مصغّرة إلكترونية. هذا الجمع غير شائع: فهو يتيح متابعة المشروع من المُجسّ إلى لوحة القيادة.",
+    "about.p1":     "ستة عشر عامًا من الخبرة، منها <strong>ثمانية في فرنسا</strong> — Air France-KLM، ومجموعة Thales عبر Trixell، ومجموعة SII في صوفيا أنتيبوليس — و<strong>ثمانية في تونس</strong>، من البرمجيات الصناعية إلى الإدارة العمومية.",
+    "about.p2":     "لا أقتصر على كتابة الشيفرة: تحديد المنتج، وإدارة المشروع، ومنهجية Scrum، وضمان الجودة جزء من الخدمة. والهدف أن يتمكّن فريقك، في نهاية المهمّة، من مواصلة المشروع دوني.",
+    /* Chiffres ecrits en lettres : un nombre en tete de chaine, suivi
+       d'arabe, est ambigu pour l'algorithme bidirectionnel. */
+    "about.f1":     "ثمانية أعوام في فرنسا، وثمانية أعوام في تونس",
+    "about.f2":     "تحديد المنتج، إدارة المشروع، Scrum، ضمان الجودة",
+    "about.f3":     "مهندس متخرّج من Grenoble INP — Phelma",
+    "about.1.t":    "الذكاء الاصطناعي ونماذج اللغة",
+    "about.1.d":    "وكلاء أذكياء، ونماذج لغوية وبصرية — Gemini، GPT-5.x، Qwen 3 VL حتى 235B. تطوير معزّز (Cursor، SpecDD) وإدخال أنظمة مستخدَمة فعليًا إلى الإنتاج.",
+    "about.2.t":    "المعمارية والتطوير المتكامل",
+    "about.2.d":    "Java 25 وSpring، Angular 21 وReact 19، خدمات مصغّرة سداسية موجّهة بالأحداث، CQRS، ومسارات عمل Temporal. تصميم واجهات برمجية مفتوحة وموثّقة وآمنة.",
+    "about.3.t":    "الإلكترونيات والأنظمة المدمجة",
+    "about.3.d":    "متخرّج في الأنظمة والأنظمة المصغّرة: متحكّمات دقيقة، STM32، لينكس الصناعي. عنصر حاسم عندما يحتاج البرنامج إلى الحوار مع عتاد حقيقي.",
+
+    "services.kicker": "الخدمات",
+    "services.title":  "ما يمكنك أن توكِله إليّ",
+    "services.lead":   "ستة مجالات ومنطق واحد: تسليم برمجيات تصمد في الإنتاج — مُختبَرة، ومؤمَّنة، وموثّقة، وقابلة للتسليم إلى فريقك.",
+
+    "svc.1.t": "هندسة الذكاء الاصطناعي والوكلاء",
+    "svc.1.d": "إدماج نماذج اللغة ونماذج الرؤية في منتجك: RAG، ووكلاء مستقلّون، وخوادم MCP، والتعرّف الضوئي على الحروف، وأتمتة ضمان الجودة. ذكاء اصطناعي مستضاف محليًا عندما تقتضي السرّية ذلك.",
+    "svc.2.t": "التطوير المتكامل",
+    "svc.2.d": "تطبيقات أعمال من الطرف إلى الطرف: خوادم بـ Java/Spring أو Node، وواجهات بـ React أو Angular، وواجهات برمجية REST موثّقة، وخدمات مصغّرة موجّهة بالأحداث. من النموذج الأوّلي إلى الإنتاج.",
+    "svc.3.t": "المعمارية والقيادة التقنية",
+    "svc.3.d": "تأطير المعمارية، واختيارات تقنية مُبرَّرة، ومراجعة الشيفرة، ورفع كفاءة مطوّريك. بصفة قائد تقني أو مدير تقني بدوام جزئي للهياكل التي لا تملك قيادة تقنية داخلية.",
+    "svc.3.g1": "خدمات مصغّرة",
+    "svc.3.g2": "موجّه بالأحداث",
+    "svc.3.g3": "مراجعة الشيفرة",
+    "svc.4.t": "DevOps والسحابة وضبط الكلفة",
+    "svc.4.d": "الحوسبة بالحاويات، والتنسيق عبر Kubernetes، ومسارات CI/CD، والبنية التحتية كشيفرة، والمراقبة. تحسين فاتورة السحابة: خفّضت بالفعل كلفة استضافة منصّة ذكاء اصطناعي إلى العُشر.",
+    "svc.5.t": "أمن التطبيقات",
+    "svc.5.d": "تدقيق ثغرات OWASP ومعالجتها، واختبارات الاختراق، والمصادقة والدخول الموحّد (Keycloak، OAuth2، MFA)، وتحصين الشبكة وTLS. اختبارات الفريق الأحمر لأنظمة تعتمد نماذج اللغة.",
+    "svc.5.g1": "اختبار اختراق",
+    "svc.6.t": "الهاتف المحمول وتطبيقات الويب التقدّمية",
+    "svc.6.d": "تطبيقات iOS وAndroid أصلية أو متعدّدة المنصّات، وتطبيقات ويب تقدّمية، وإدماج Firebase وتحقيق الأرباح. مواكبة حتى النشر على المتاجر.",
+
+    "engage.t":   "صيغ التعاون",
+    "engage.1.t": "بالوقت المستغرق",
+    "engage.1.d": "أنضمّ إلى فريقك لمدّة متّفق عليها، بدوام كامل أو جزئي. الأنسب عندما يبقى نطاق العمل متحرّكًا.",
+    "engage.2.t": "مقابل جزافي للمشروع",
+    "engage.2.d": "النطاق والمُخرجات والميزانية تُحدَّد مسبقًا بعد مرحلة تأطير. الأنسب لتطبيق محدّد المعالم.",
+    "engage.3.t": "استشارة وتدقيق",
+    "engage.3.d": "أيّام قليلة لتدقيق معمارية، أو فاتورة سحابية، أو أمن تطبيق، مع تقرير قابل للتنفيذ.",
+
+    "stack.kicker": "الخبرة التقنية",
+    "stack.title":  "حزمة تقنية مُجرَّبة في الإنتاج",
+    "stack.lead":   "هذه ليست قائمة متابعة تقنية: كلّ عنصر منها خدم في مهمّة حقيقية، في الإنتاج، لدى عميل.",
+    "stack.1.t":  "الذكاء الاصطناعي",
+    "stack.1.g1": "وكلاء أذكياء",
+    "stack.2.t":  "الخوادم",
+    "stack.3.t":  "الواجهات والهاتف المحمول",
+    "stack.3.g1": "واجهات مصغّرة",
+    "stack.4.t":  "البيانات",
+    "stack.5.t":  "السحابة وDevOps",
+    "stack.6.t":  "الأمن والجودة",
+
+    "watch.t": "متابعة تقنية ورفع كفاءة",
+    "watch.d": "هذه المجالات تستهويني وأمارسها تعلّمًا ذاتيًا، لكنّي لم أُسلّمها بعد في الإنتاج لدى عميل. أفضّل التصريح بذلك بدل خلطها بالقائمة السابقة.",
+
+    "work.kicker": "أعمال مختارة",
+    "work.title":  "بعض المشاريع الدالّة",
+    "work.lead":   "من الإدارة العمومية إلى الطيران، ومن الصناعة إلى الصحّة — سياقات يكون فيها الخطأ مكلفًا.",
+    "work.1.r": "تطبيق جوّال · عمل مستقل",
+    "work.1.d": "تطبيق لصيانة الدرّاجات النارية وتقدير أسعارها، مطوَّر أصليًا لـ iOS وAndroid وكذلك بـ Flutter، مع مساعدة بالذكاء الاصطناعي في التشخيص وتحقيق أرباح عبر AdMob.",
+    "work.2.r": "قائد تقني للذكاء الاصطناعي · منصّة SaaS",
+    "work.2.d": "القيادة التقنية لمنصّة ذكاء اصطناعي: إدارة فريق من تسعة أشخاص، وإرساء وكلاء لأتمتة ضمان الجودة، والانتقال من Azure إلى Hetzner بتخفيض فاتورة الاستضافة بأكثر من 90%.",
+    "work.3.t": "الديوانة التونسية",
+    "work.3.r": "قائد تطوير متكامل بالذكاء الاصطناعي · BNS Engineering وNetCompany",
+    "work.3.d": "تطبيق أعمال لإدارة الديوانة، مبنيّ بمساعدة وكلاء أذكياء: خادم Java/Spring، وواجهة React، ومصادقة Keycloak، وناقل Kafka، ونشر مُراقَب على Kubernetes.",
+    "work.4.r": "مطوّر متكامل",
+    "work.4.d": "منصّة لتبادل الملفّات بأمان: تشفير التبادلات، ومصادقة متعدّدة العوامل، وتخزين كائني خاص، وبنية تحتية بالحاويات.",
+    "work.5.r": "مهندس Java JEE · عبر مجموعة SII",
+    "work.5.d": "إعادة بناء تطبيقات حجز التذاكر (للأفراد والمجموعات) والانتقال إلى موفّرين جدد لإدارة ملفّات المسافرين (PNR)، في صوفيا أنتيبوليس.",
+    "work.6.r": "مهندس تطوير · مراقبة بالفيديو مدمجة",
+    "work.6.d": "حلّ كامل للمراقبة بالفيديو المتنقّلة والمحدّدة الموقع: مجموعة تطبيقات قيادة بـ Java، وتطبيق Android، وخادم ويب لإدارة الأسطول، ونظام لينكس مدمج بشبكة 3G/4G مع مسجّل فيديو آني.",
+    "work.sectors":    "قطاعات سبق أن خدمتها:",
+    "work.sectorList": "الإدارة العمومية · الطيران · الصحّة · اللوجستيك والنقل العمومي · الصناعة · التقنية المالية · الأمن السيبراني · إنترنت الأشياء · الاتصالات",
+
+    "path.kicker": "المسار المهني",
+    "path.title":  "ستة عشر عامًا من الهندسة، من غرينوبل إلى تونس",
+    "path.lead":   "متخرّج مهندسًا من Grenoble INP — Phelma، بدأت بمعالجة الصور والأنظمة المدمجة في فرنسا، قبل التخصّص في منصّات الويب والسحابة، ثمّ الذكاء الاصطناعي التطبيقي.",
+    "path.now":    "الآن",
+    "path.1.d":  "مهمّة قيادة تقنية بصفة مستقلّة، مع تطوير معزّز بوكلاء الذكاء الاصطناعي.",
+    "path.2.d":  "تطبيق لفائدة الديوانة التونسية، بشراكة مع NetCompany. Java، Spring، React، Kubernetes.",
+    "path.3.d":  "اختبارات الفريق الأحمر لأنظمة تعتمد نماذج اللغة (DeepTeam، Promptfoo)، ومرجعية OWASP للوكلاء الأذكياء.",
+    "path.4.d":  "إدارة فريق من تسعة أشخاص، وتصميم معمارية المنصّة، وقيادة الانتقال السحابي (−90% من الكلفة)، والمشاركة كعارض في معرض المتوسّط للذكاء الاصطناعي.",
+    "path.5.d":  "تطبيقات في الصحّة واللوجستيك والنقل العمومي. تطوير بـ Java/Spring/React، واختبارات اختراق، وDevOps على Azure، وتطبيق ويب تقدّمي.",
+    "path.6.d":  "معمارية منصّة low-code موجّهة بالأحداث، وخدمات مصغّرة، ومعالجة ثغرات أمنية، وتوليد الشيفرة.",
+    "path.7.d":  "تطبيق CRM/ERP: إدارة المشروع، والمسؤولية التقنية، وضمان الجودة، وتشغيل الخوادم.",
+    "path.8.d":  "تطبيق أمن سيبراني: واجهات برمجية REST بـ Java، وواجهات React، وبرمجة نصية على لينكس، وجودة الشيفرة عبر Sonar Cloud.",
+    "path.9.d":  "تطوير منخفض المستوى وأدوات للإلكترونيات المدمجة (STM32، متحكّمات دقيقة).",
+    "path.10.d": "تطبيق لحجز سيّارات الأجرة منشور في مالطا. Java، Spring Boot، PostgreSQL، AWS.",
+    "path.11.d": "تطبيق صناعي: خدمة مصغّرة ETL بـ Java، ومحرّك قواعد، وواجهات Angular، واختبارات حِمل، وبروتوكولا OPC وModbus.",
+    "path.12.t": "مهندس تطوير برمجيات — M&amp;C IT Consulting",
+    "path.12.d": "تطبيق دفع في قطاع الطيران، بحزمة MEAN، مع إدارة المشروع وتكوين المتربّصين.",
+    "path.13.d": "حلّ لحجز قاعات الاجتماعات: معمارية واجهة برمجية REST، وDevOps، ومراجعة الشيفرة، وCI/CD.",
+    "path.14.d": "منصّة إنترنت الأشياء لإدارة المركبات: واجهات برمجية بـ Java، وواجهات Angular، وإدماج Kafka.",
+    "path.15.t": "مهندس Java JEE — Air France-KLM / مجموعة SII",
+    "path.15.d": "حجز التذاكر وإدارة ملفّات المسافرين لفائدة Air France؛ وقبل ذلك، تطبيق للنقود الإلكترونية لفائدة Roberto Giori Company.",
+    "path.16.t": "مهندس تطوير — 4G Technology",
+    "path.16.d": "ستّ سنوات على حلّ للمراقبة بالفيديو المتنقّلة: تطبيقات قيادة بـ Java، وAndroid، وخادم ويب، ونظام لينكس مدمج، وبثّ فيديو.",
+    "path.17.t": "تربّص في معالجة الصور — Trixell",
+    "path.17.d": "خوارزميات لكشف العيوب في الصور الطبّية، في غرينوبل.",
+    "path.more": "عرض المسار المهني كاملًا (10 مناصب إضافية)",
+
+    "edu.t": "التكوين",
+    /* Dates entre parentheses : l'algorithme bidirectionnel met les
+       parentheses en miroir correctement, la ou un separateur nu laisse
+       un intervalle de chiffres flottant en fin de ligne. */
+    "edu.1": "دبلوم مهندس — أنظمة وأنظمة مصغّرة للفيزياء والتقنيات الحيوية (2007–2010)",
+    "edu.2": "ماجستير (مسار مزدوج) — الإشارة والصورة والكلام والاتصالات (2009–2010)",
+    "edu.3": "أقسام تحضيرية — رياضيات وفيزياء وعلوم صناعية (2005–2007)",
+    "edu.4": "بكالوريا رياضيات بميزة ممتاز، بمعدّل 18,31 من 20 (2005)",
+
+    "contact.kicker": "تواصل",
+    "contact.title":  "لنتحدّث عن مشروعك",
+    "contact.lead":   "صِف حاجتك في بضعة أسطر. أُجيب في غضون يوم عمل واحد بقراءة تقنية أولى — مجّانًا وبلا التزام.",
+    "contact.mail":   "البريد الإلكتروني",
+    "contact.tel":    "الهاتف",
+    "contact.waSub":  "ردّ سريع",
+    "contact.liSub":  "المسار المفصّل والتوصيات",
+    "contact.loc":    "الموقع",
+    "contact.locV":   "سكرة، أريانة — تونس",
+    "contact.mode":   "الصيغ",
+    "contact.modeV":  "عن بُعد، أو مختلط، أو في الموقع",
+    "contact.lang":   "اللغات",
+    "contact.langV":  "الفرنسية، الإنجليزية، العربية",
+
+    "form.name":  "الاسم / الشركة",
+    "form.email": "بريدك الإلكتروني",
+    "form.need":  "نوع الحاجة",
+    "form.opt1":  "هندسة الذكاء الاصطناعي والوكلاء",
+    "form.opt2":  "التطوير المتكامل",
+    "form.opt3":  "المعمارية / القيادة التقنية",
+    "form.opt4":  "DevOps والسحابة والكلفة",
+    "form.opt5":  "الأمن والتدقيق",
+    "form.opt6":  "تطبيق جوّال",
+    "form.opt7":  "شيء آخر / لم أحدّد بعد",
+    "form.msg":   "مشروعك",
+    "form.send":  "الإرسال بالبريد الإلكتروني",
+    "form.note":  "يفتح هذا الزرّ برنامج البريد لديك مع رسالة مُعبّأة مسبقًا. لا تُخزَّن أيّ بيانات على هذا الموقع.",
+
+    "footer.status": "مهندس برمجيات مستقل، تونس",
+    "footer.print":  "طباعة / PDF",
+    "footer.top":    "أعلى الصفحة"
   }
 };

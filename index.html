@@ -36,7 +36,7 @@
   "founder": {
     "@type": "Person",
     "name": "Kais Zouali",
-    "jobTitle": "Senior Software Engineer / AI & DevSecOps / Technical Architect",
+    "jobTitle": "Senior Software Engineer / AI & LLM Development / Technical Architect / Electronic Systems & Microsystems Engineer",
     "email": "mailto:kais.zouali@gmail.com",
     "telephone": "+21620535769",
     "address": { "@type": "PostalAddress", "addressLocality": "Soukra, Ariana", "addressCountry": "TN" },
@@ -45,7 +45,7 @@
       "https://www.linkedin.com/in/kais-zouali-tel-20535769/",
       "https://github.com/kaisz"
     ],
-    "knowsAbout": ["Intelligence artificielle", "LLM", "RAG", "Java", "Spring Boot", "React", "Angular", "Kubernetes", "DevOps", "Cybersécurité", "Architecture microservices"]
+    "knowsAbout": ["Intelligence artificielle", "LLM", "RAG", "Agents IA", "Java", "Spring Boot", "React", "Angular", "Kubernetes", "DevOps", "Cybersécurité", "Architecture microservices", "Systèmes embarqués", "STM32", "Gestion de projet"]
   }
 }
 </script>
@@ -85,6 +85,7 @@
     </a>
 
     <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#apropos" data-i18n="nav.about">Profil</a>
       <a href="#services" data-i18n="nav.services">Prestations</a>
       <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
       <a href="#realisations" data-i18n="nav.work">Réalisations</a>
@@ -93,9 +94,10 @@
     </nav>
 
     <div class="header-tools">
-      <div class="lang-switch" role="group" aria-label="Langue / Language">
+      <div class="lang-switch" role="group" aria-label="Langue / Language / اللغة">
         <button type="button" data-lang="fr" class="is-active" aria-pressed="true">FR</button>
         <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="ar" aria-pressed="false" lang="ar">ع</button>
       </div>
       <button type="button" class="icon-btn" id="theme-toggle" aria-label="Changer de thème">
         <svg class="ico ico-moon"><use href="#i-moon"/></svg>
@@ -165,6 +167,68 @@
           <dd><span class="num" data-count="9">9</span></dd>
         </div>
       </dl>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROFIL / À PROPOS ══════════════ -->
+  <section id="apropos" class="section section-alt">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="kicker" data-i18n="about.kicker">Profil</p>
+        <h2 data-i18n="about.title">Trois métiers dans un seul profil</h2>
+        <p class="section-lead" data-i18n="about.lead">
+          Ingénieur études et développement IA/LLM, architecte technique, et ingénieur
+          systèmes et microsystèmes électroniques. Cette combinaison est peu courante&nbsp;:
+          elle permet de suivre un projet du capteur jusqu'au tableau de bord.
+        </p>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-i18n="about.p1">
+            Seize ans d'expérience, dont <strong>huit en France</strong> — Air France-KLM,
+            groupe Thales via Trixell, Groupe SII à Sophia Antipolis — et
+            <strong>huit en Tunisie</strong>, du logiciel industriel à l'administration publique.
+          </p>
+          <p data-i18n="about.p2">
+            Je ne me limite pas à écrire du code&nbsp;: définition de produit, gestion de projet,
+            méthodologie Scrum et assurance qualité font partie de la prestation. L'objectif est
+            qu'à la fin de la mission votre équipe puisse reprendre le projet sans moi.
+          </p>
+          <ul class="about-facts">
+            <li><svg class="ico"><use href="#i-check"/></svg><span data-i18n="about.f1">8 ans en France · 8 ans en Tunisie</span></li>
+            <li><svg class="ico"><use href="#i-check"/></svg><span data-i18n="about.f2">Définition produit, gestion de projet, Scrum, QA</span></li>
+            <li><svg class="ico"><use href="#i-check"/></svg><span data-i18n="about.f3">Diplômé ingénieur de Grenoble INP — Phelma</span></li>
+          </ul>
+        </div>
+
+        <ul class="pillars">
+          <li class="pillar reveal">
+            <svg class="card-ico"><use href="#i-ai"/></svg>
+            <h3 data-i18n="about.1.t">IA & modèles de langage</h3>
+            <p data-i18n="about.1.d">
+              Agents IA, modèles de langage et de vision — Gemini, GPT-5.x, Qwen 3 VL jusqu'à 235B.
+              Développement assisté (Cursor, SpecDD) et mise en production de systèmes réellement utilisés.
+            </p>
+          </li>
+          <li class="pillar reveal">
+            <svg class="card-ico"><use href="#i-arch"/></svg>
+            <h3 data-i18n="about.2.t">Architecture & full-stack</h3>
+            <p data-i18n="about.2.d">
+              Java 25 et Spring, Angular 21 et React 19, microservices hexagonaux orientés
+              événements, CQRS, workflows Temporal. Conception d'API ouvertes, documentées et sécurisées.
+            </p>
+          </li>
+          <li class="pillar reveal">
+            <svg class="card-ico"><use href="#i-mobile"/></svg>
+            <h3 data-i18n="about.3.t">Électronique & embarqué</h3>
+            <p data-i18n="about.3.d">
+              Diplômé en systèmes et microsystèmes&nbsp;: microcontrôleurs, STM32, Linux industriel.
+              Décisif quand le logiciel doit dialoguer avec du matériel réel.
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -295,24 +359,24 @@
         <div class="stack-col reveal">
           <h3 data-i18n="stack.1.t">Intelligence artificielle</h3>
           <ul class="pills">
-            <li>OpenAI GPT</li><li>Gemini</li><li>Claude</li><li>Llama</li><li>Mistral</li><li>Qwen VL</li>
-            <li>LangChain</li><li>RAG</li><li>Qdrant</li><li>MCP servers</li><li>HuggingFace</li>
-            <li>Ollama</li><li>LM Studio</li><li>OCR</li><li>OpenCV</li><li>TensorFlow</li>
+            <li>GPT-5.x</li><li>Gemini</li><li>Claude</li><li>Llama</li><li>Mistral</li><li>Qwen 3 VL 235B</li>
+            <li data-i18n="stack.1.g1">Agents IA</li><li>LangChain</li><li>RAG</li><li>Qdrant</li><li>MCP servers</li><li>HuggingFace</li>
+            <li>Ollama</li><li>LM Studio</li><li>Cursor</li><li>SpecDD</li><li>OCR</li><li>OpenCV</li><li>TensorFlow</li>
           </ul>
         </div>
         <div class="stack-col reveal">
           <h3 data-i18n="stack.2.t">Back-end</h3>
           <ul class="pills">
-            <li>Java 8→21</li><li>Spring Boot</li><li>Spring Security</li><li>Quarkus</li><li>Hibernate / JPA</li>
-            <li>Node.js</li><li>NestJS</li><li>Express</li><li>Python</li><li>FastAPI</li><li>SQLAlchemy</li>
-            <li>Kafka</li><li>RabbitMQ</li><li>Redis</li><li>Drools</li><li>Maven / Gradle</li>
+            <li>Java 8→25</li><li>Spring Boot 4</li><li>Spring Framework 7</li><li>Spring Security</li><li>Quarkus</li><li>Hibernate / JPA</li>
+            <li>Node.js 24</li><li>NestJS 11</li><li>Express 5</li><li>Python 3.14</li><li>FastAPI</li><li>SQLAlchemy</li>
+            <li>Kafka</li><li>RabbitMQ</li><li>Redis</li><li>Temporal</li><li>Drools</li><li>ZeroMQ</li><li>Maven / Gradle</li>
           </ul>
         </div>
         <div class="stack-col reveal">
           <h3 data-i18n="stack.3.t">Front-end & mobile</h3>
           <ul class="pills">
-            <li>React 19</li><li>Angular</li><li>TypeScript</li><li>Vite</li><li>Tailwind</li><li>HTML / CSS</li>
-            <li>Micro front-ends</li><li>Swift / iOS</li><li>Kotlin / Android</li><li>Flutter</li><li>PWA</li><li>Figma</li>
+            <li>React 19</li><li>Angular 21</li><li>TypeScript 5</li><li>Vite 7</li><li>Tailwind 4</li><li>Material UI 7</li><li>HTML / CSS</li>
+            <li data-i18n="stack.3.g1">Micro front-ends</li><li>Swift / iOS 26</li><li>Kotlin / Android 16</li><li>Flutter</li><li>PWA</li><li>Figma</li><li>Kombai</li>
           </ul>
         </div>
         <div class="stack-col reveal">
@@ -335,9 +399,25 @@
           <ul class="pills">
             <li>OWASP</li><li>Keycloak</li><li>OAuth2 / JWT</li><li>SSO / MFA</li><li>Entra ID</li>
             <li>TLS</li><li>Rate limiting</li><li>Wireshark</li><li>nmap</li><li>Nessus</li>
-            <li>SonarQube</li><li>JUnit</li><li>Vitest</li><li>Playwright</li><li>Cucumber</li><li>Postman</li>
+            <li>SonarQube</li><li>JUnit 5</li><li>Mockito 5</li><li>Vitest</li><li>Playwright</li><li>Cucumber</li><li>Swagger</li><li>Postman</li>
           </ul>
         </div>
+      </div>
+
+      <div class="watch reveal">
+        <h3 data-i18n="watch.t">Veille et montée en compétence</h3>
+        <p data-i18n="watch.d">
+          Ces domaines m'intéressent et je les pratique en autoformation, mais je ne les ai
+          pas encore livrés en production chez un client. Je préfère le dire plutôt que de
+          les mélanger à la liste précédente.
+        </p>
+        <ul class="pills pills-muted">
+          <li>Ansible</li><li>Azure Bicep</li><li>CloudFormation</li><li>EventBridge</li>
+          <li>Apache Spark</li><li>Flink</li><li>Beam</li><li>Airflow</li><li>MLflow</li>
+          <li>NumPy</li><li>PyTorch</li><li>ETL / ELT</li>
+          <li>Google Cloud</li><li>GKE</li><li>BigQuery</li><li>BigTable</li><li>Dataflow</li><li>Pub/Sub</li>
+          <li>Power BI</li>
+        </ul>
       </div>
     </div>
   </section>

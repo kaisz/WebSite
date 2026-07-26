@@ -28,6 +28,10 @@
 
   --font: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  /* Piles arabes installees de base sur Windows, macOS/iOS et Android :
+     aucune police distante, conformement au parti pris du projet. */
+  --font-ar: "Segoe UI", "Noto Sans Arabic", "Noto Naskh Arabic", "Geeza Pro",
+             "Al Bayan", "Droid Arabic Naskh", Tahoma, sans-serif;
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 }
 
@@ -95,11 +99,11 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
 }
 
 .skip-link {
-  position: absolute; left: -9999px; top: 0; z-index: 100;
+  position: absolute; inset-inline-start: -9999px; top: 0; z-index: 100;
   background: var(--accent); color: var(--accent-ink);
-  padding: .7rem 1.1rem; border-radius: 0 0 var(--r-sm) 0;
+  padding: .7rem 1.1rem; border-end-end-radius: var(--r-sm);
 }
-.skip-link:focus { left: 0; }
+.skip-link:focus { inset-inline-start: 0; }
 
 :focus-visible { outline: none; box-shadow: var(--ring); border-radius: var(--r-sm); }
 
@@ -125,7 +129,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
   min-height: 70px;
 }
 
-.brand { display: flex; align-items: center; gap: .7rem; margin-right: auto; }
+.brand { display: flex; align-items: center; gap: .7rem; margin-inline-end: auto; }
 .brand-mark {
   display: grid; place-items: center;
   width: 38px; height: 38px; border-radius: 11px;
@@ -146,7 +150,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
 .nav > a.is-current { color: var(--text); }
 .nav .nav-cta {
   background: var(--accent); color: var(--accent-ink);
-  font-weight: 560; margin-left: .35rem;
+  font-weight: 560; margin-inline-start: .35rem;
 }
 .nav .nav-cta:hover { background: var(--accent); filter: brightness(1.1); color: var(--accent-ink); }
 
@@ -385,15 +389,15 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
 .sectors b { color: var(--text-2); font-weight: 500; }
 
 /* Timeline */
-.timeline { position: relative; padding-left: 1.9rem; }
+.timeline { position: relative; padding-inline-start: 1.9rem; }
 .timeline::before {
-  content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 1px;
+  content: ""; position: absolute; inset-inline-start: 5px; top: 8px; bottom: 8px; width: 1px;
   background: linear-gradient(var(--accent), var(--accent-3), transparent);
   opacity: .5;
 }
 .tl { position: relative; padding-bottom: 1.9rem; }
 .tl::before {
-  content: ""; position: absolute; left: -1.9rem; top: 8px;
+  content: ""; position: absolute; inset-inline-start: -1.9rem; top: 8px;
   width: 11px; height: 11px; border-radius: 50%;
   background: var(--bg-2); border: 2px solid var(--accent);
 }
@@ -420,6 +424,40 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
 }
 .edu-list strong { font-size: .95rem; font-weight: 620; }
 .edu-list span { font-size: .85rem; color: var(--text-2); }
+
+/* Profil / a propos */
+.about-grid {
+  display: grid; gap: 1.6rem 2.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+}
+.about-text p { color: var(--text-2); }
+.about-text strong { color: var(--text); font-weight: 600; }
+.about-facts { display: grid; gap: .55rem; margin-top: 1.5rem; }
+.about-facts li { display: flex; align-items: flex-start; gap: .55rem; font-size: .88rem; color: var(--muted); }
+.about-facts .ico { color: var(--accent-2); width: 15px; height: 15px; stroke-width: 2.2; margin-top: .38rem; }
+
+.pillars { display: grid; gap: .9rem; }
+.pillar {
+  padding: 1.3rem 1.35rem; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--r);
+  transition: border-color .25s, transform .25s;
+}
+.pillar:hover { border-color: var(--border-2); transform: translateY(-2px); }
+.pillar .card-ico { width: 26px; height: 26px; padding: 6px; margin-bottom: .7rem; }
+.pillar h3 { font-size: 1.02rem; margin-bottom: .4rem; }
+.pillar p { color: var(--text-2); font-size: .9rem; margin: 0; }
+
+/* Veille : volontairement distingue de la stack de production */
+.watch {
+  margin-top: 2.5rem; padding: 1.5rem 1.5rem 1.4rem;
+  background: var(--surface); border: 1px dashed var(--border-2);
+  border-radius: var(--r-lg);
+}
+.watch h3 { font-size: 1.02rem; margin-bottom: .5rem; }
+.watch p { color: var(--muted); font-size: .89rem; max-width: 80ch; margin-bottom: 1.1rem; }
+.pills-muted li { background: transparent; color: var(--muted); font-size: .77rem; }
+.pills-muted li:hover { color: var(--text-2); border-color: var(--border-2); transform: none; }
 
 /* ---------- 6. Contact ---------- */
 .section-contact { background: var(--bg-2); border-top: 1px solid var(--border); }
@@ -474,7 +512,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
 .contact-facts p { display: flex; justify-content: space-between; gap: 1rem; margin: 0 0 .5rem; font-size: .85rem; }
 .contact-facts p:last-child { margin-bottom: 0; }
 .contact-facts b { color: var(--muted); font-weight: 540; }
-.contact-facts span { color: var(--text-2); text-align: right; }
+.contact-facts span { color: var(--text-2); text-align: end; }
 
 /* ---------- 7. Pied de page ---------- */
 .site-footer { border-top: 1px solid var(--border); padding: 1.8rem 0; }
@@ -511,11 +549,13 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
 }
 
 /* ---------- 9. Responsive ---------- */
-@media (max-width: 900px) {
-  .contact-grid { grid-template-columns: 1fr; }
+@media (max-width: 960px) {
+  .contact-grid, .about-grid { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 820px) {
+/* Six entrees de menu plus trois boutons de langue : le repli en
+   hamburger arrive plus tot qu'avec deux langues. */
+@media (max-width: 900px) {
   .burger { display: flex; }
   .nav {
     position: fixed; inset: 70px 0 auto 0;
@@ -537,11 +577,63 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
   .stats { grid-template-columns: repeat(2, 1fr); }
   .hero-meta { flex-direction: column; gap: .45rem; }
   .contact-facts p { flex-direction: column; gap: .1rem; }
-  .contact-facts span { text-align: left; }
+  .contact-facts span { text-align: start; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
 }
 
-/* ---------- 10. Impression / export PDF ---------- */
+/* ---------- 10. Arabe et droite a gauche ---------- */
+
+/* Le selecteur de langue affiche "ع" meme quand la page est en FR/EN. */
+.lang-switch button[lang="ar"] { font-family: var(--font-ar); font-size: .88rem; }
+
+[lang="ar"] body,
+[lang="ar"] .btn,
+[lang="ar"] input, [lang="ar"] select, [lang="ar"] textarea {
+  font-family: var(--font-ar);
+}
+
+/* L'arabe demande plus d'interlignage (signes diacritiques) et refuse
+   tout resserrement : le crenage negatif casse les ligatures cursives. */
+[lang="ar"] body { line-height: 1.85; }
+[lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] h4 { line-height: 1.45; }
+[lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] h4,
+[lang="ar"] .kicker, [lang="ar"] .brand-mark, [lang="ar"] .lang-switch button,
+[lang="ar"] .contact-link b, [lang="ar"] .tags li, [lang="ar"] .stack-col h3,
+[lang="ar"] .stat dd, [lang="ar"] .tl-date { letter-spacing: normal; }
+
+/* La casse haute n'a pas de sens en arabe. */
+[lang="ar"] .kicker, [lang="ar"] .contact-link b, [lang="ar"] .stack-col h3 { text-transform: none; }
+
+/* Les etiquettes techniques sont en monospace, police qui ne couvre pas
+   l'arabe : le repli produit des metriques batardes. Les libelles arabes
+   reprennent donc la pile arabe, les noms latins gardent le monospace. */
+[lang="ar"] .tags li[data-i18n] { font-family: var(--font-ar); letter-spacing: normal; }
+
+/* Les fleches suivent le sens de lecture : on les retourne, et le
+   deplacement au survol se fait alors naturellement vers la gauche. */
+[dir="rtl"] .btn .ico { transform: scaleX(-1); }
+[dir="rtl"] .btn-primary:hover .ico { transform: scaleX(-1) translateX(3px); }
+[dir="rtl"] .contact-link:hover { transform: translateX(-3px); }
+
+/* Degrade du fond : on le renvoie du cote oppose pour rester coherent. */
+[dir="rtl"] .hero-glow { transform: scaleX(-1); }
+
+/* Plages d'annees et valeurs chiffrees.
+   Dans un paragraphe RTL, le tiret d'une plage « 2010–2016 » est un
+   caractere neutre : il prend la direction du paragraphe, coupe les deux
+   nombres en deux sequences distinctes, et celles-ci sont alors ordonnees
+   de droite a gauche — ce qui affiche « 2016–2010 ». Meme probleme pour
+   le signe moins de « −90 % ». On isole donc ces valeurs en LTR, tout en
+   les gardant collees au bord de depart (la droite en RTL). */
+[dir="rtl"] .year,
+[dir="rtl"] .tl-date,
+[dir="rtl"] .stat dd {
+  direction: ltr;
+  unicode-bidi: isolate;
+  text-align: right;
+}
+
+/* ---------- 11. Impression / export PDF ---------- */
 @media print {
   :root {
     --bg: #fff; --bg-2: #fff; --surface: #fff; --surface-2: #fff;
