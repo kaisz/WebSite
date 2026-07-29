@@ -284,6 +284,13 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
   -webkit-text-fill-color: transparent;
 }
 .stat { display: flex; flex-direction: column; }
+/* Le dd est en degrade avec text-fill transparent : il faut rendre sa
+   couleur au qualificatif, sinon il disparait. */
+.stat-pre {
+  display: block; font-size: .72rem; font-weight: 500; letter-spacing: 0;
+  color: var(--muted); -webkit-text-fill-color: var(--muted);
+  margin-bottom: -.2rem;
+}
 
 /* ---------- 5. Sections ---------- */
 .section { padding: clamp(3.5rem, 7vw, 6.5rem) 0; }

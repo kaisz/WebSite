@@ -1,7 +1,7 @@
 # Site vitrine — Kais Zouali
 
 Site statique bilingue (FR/EN) présentant mes prestations d'ingénieur logiciel
-indépendant, construit à partir de mon profil LinkedIn.
+auto-entrepreneur, construit à partir de mon profil LinkedIn.
 
 Aucune dépendance, aucun build, aucun `npm install` : trois fichiers et c'est en ligne.
 

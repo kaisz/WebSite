@@ -67,12 +67,12 @@ window.I18N = {
   /* ══════════════════════════ ANGLAIS ══════════════════════════ */
   en: {
     "meta.title":       "Kais Zouali — Senior freelance software engineer · AI, Full-Stack, DevSecOps",
-    "meta.description": "Independent senior software engineer: AI & agent engineering, Java/Spring & React full-stack development, microservice architecture, DevOps/Kubernetes and application security. 16 years of experience, Tunisia & Europe, remote or on site.",
+    "meta.description": "Self-employed senior software engineer: AI & agent engineering, Java/Spring & React full-stack development, microservice architecture, DevOps/Kubernetes and application security. 16 years of experience, Tunisia & Europe, remote or on site.",
     "meta.ogTitle":     "Kais Zouali — Senior freelance software engineer",
 
     "a11y.skip": "Skip to main content",
 
-    "brand.tagline": "Independent software engineer",
+    "brand.tagline": "Self-employed software engineer",
 
     "nav.about":     "Profile",
     "nav.services":  "Services",
@@ -83,7 +83,7 @@ window.I18N = {
 
     "hero.status": "Available for new engagements",
     "hero.title":  "I help companies design,<br>secure and ship software <span class=\"grad\">driven by AI</span>.",
-    "hero.lead":   "Independent senior software engineer with 16 years of experience across France and Tunisia. I step in as <strong>tech lead</strong>, <strong>architect</strong> or <strong>full-stack developer</strong> on demanding projects: AI platforms, business-critical applications, cloud and cybersecurity.",
+    "hero.lead":   "Self-employed senior software engineer with 16 years of experience across France and Tunisia. I step in as <strong>tech lead</strong>, <strong>architect</strong> or <strong>full-stack developer</strong> on demanding projects: AI platforms, business-critical applications, cloud and cybersecurity.",
     "hero.cta1":   "Let's talk about your project",
     "hero.cta2":   "See the services",
     "hero.meta1":  "Remote, hybrid or on site (Greater Tunis)",
@@ -94,6 +94,7 @@ window.I18N = {
     "stats.2.k": "Engagements & companies",
     "stats.3.k": "Cloud cost reduction delivered",
     "stats.4.k": "Engineers managed",
+    "stats.upto": "up to",
 
     "about.kicker": "Profile",
     "about.title":  "Three disciplines in one profile",
@@ -160,7 +161,7 @@ window.I18N = {
     "work.1.r": "Mobile application · Freelance",
     "work.1.d": "Motorcycle maintenance and price-estimation app, built natively for iOS and Android as well as in Flutter, with AI-assisted diagnosis and AdMob monetisation.",
     "work.2.r": "AI tech lead · SaaS platform",
-    "work.2.d": "Technical leadership of an AI platform: managing a team of 9, building QA automation agents, and migrating from Azure to Hetzner — cutting the hosting bill by more than 90%.",
+    "work.2.d": "Technical leadership of an AI platform: managing a team of up to 9, building QA automation agents, and migrating from Azure to Hetzner — cutting the hosting bill by more than 90%.",
     "work.3.t": "Tunisian Customs",
     "work.3.r": "AI full-stack lead · BNS Engineering &amp; NetCompany",
     "work.3.d": "Business application for the customs authority, built with the help of AI agents: Java/Spring back end, React front end, Keycloak authentication, Kafka bus, monitored Kubernetes deployment.",
@@ -180,7 +181,9 @@ window.I18N = {
     "path.1.d":  "Freelance technical leadership engagement, development assisted by AI agents.",
     "path.2.d":  "Application for the Tunisian Customs authority, in partnership with NetCompany. Java, Spring, React, Kubernetes.",
     "path.3.d":  "Red teaming of LLM-based systems (DeepTeam, Promptfoo), OWASP framework for AI agents.",
-    "path.4.d":  "Managed a team of 9, designed the platform architecture, ran the cloud migration (−90% cost), exhibited at the Mediterranean AI Fair.",
+    "path.4.d":  "Managed a team of up to 9, designed the platform architecture, ran the cloud migration (−90% cost), exhibited at the Mediterranean AI Fair.",
+    "path.ws.d":  "Development of a secure file-sharing application: encrypted transfers, multi-factor authentication, private object storage. React 19, Vite, NestJS, Prisma, PostgreSQL, MinIO, Docker, GitHub CI/CD.",
+    "path.sew.d": "Identification and diagnosis of electronic boards through OCR and vision models, LLM-assisted maintenance solutions.",
     "path.5.d":  "Healthcare, logistics and public-transport applications. Java/Spring/React development, penetration testing, Azure DevOps, PWA.",
     "path.6.d":  "Architecture of an event-driven low-code platform, microservices, security vulnerability remediation, code generation.",
     "path.7.d":  "CRM/ERP application: project management, technical ownership, quality assurance and server operations.",
@@ -234,20 +237,20 @@ window.I18N = {
     "form.send":  "Send by email",
     "form.note":  "This button opens your mail client with the message pre-filled. No data is stored on this site.",
 
-    "footer.status": "Independent software engineer, Tunisia",
+    "footer.status": "Self-employed software engineer, Tunisia",
     "footer.print":  "Print / PDF",
     "footer.top":    "Back to top"
   },
 
   /* ══════════════════════════ ARABE ══════════════════════════ */
   ar: {
-    "meta.title":       "قيس الزوالي — مهندس برمجيات أول مستقل · الذكاء الاصطناعي، تطوير متكامل، DevSecOps",
-    "meta.description": "مهندس برمجيات أول مستقل: هندسة الذكاء الاصطناعي والوكلاء الأذكياء، تطوير متكامل بـ Java/Spring وReact، بنية الخدمات المصغّرة، DevOps وKubernetes، وأمن التطبيقات. ستة عشر عامًا من الخبرة بين تونس وأوروبا، عن بُعد أو في الموقع.",
-    "meta.ogTitle":     "قيس الزوالي — مهندس برمجيات أول مستقل",
+    "meta.title":       "قيس الزوالي — مهندس برمجيات أول ومقاول ذاتي · الذكاء الاصطناعي، تطوير متكامل، DevSecOps",
+    "meta.description": "مهندس برمجيات أول ومقاول ذاتي: هندسة الذكاء الاصطناعي والوكلاء الأذكياء، تطوير متكامل بـ Java/Spring وReact، بنية الخدمات المصغّرة، DevOps وKubernetes، وأمن التطبيقات. ستة عشر عامًا من الخبرة بين تونس وأوروبا، عن بُعد أو في الموقع.",
+    "meta.ogTitle":     "قيس الزوالي — مهندس برمجيات أول ومقاول ذاتي",
 
     "a11y.skip": "الانتقال إلى المحتوى الرئيسي",
 
-    "brand.tagline": "مهندس برمجيات مستقل",
+    "brand.tagline": "مهندس برمجيات ومقاول ذاتي",
 
     "nav.about":     "نبذة",
     "nav.services":  "الخدمات",
@@ -260,7 +263,7 @@ window.I18N = {
     /* Pas de <br> ici : le titre arabe est plus long que le francais et une
        coupure forcee produit des lignes tres inegales. On laisse couler. */
     "hero.title":  "أساعد الشركات على تصميم البرمجيات وتأمينها وتسليمها <span class=\"grad\">بقيادة الذكاء الاصطناعي</span>.",
-    "hero.lead":   "مهندس برمجيات أول مستقل، بخبرة ستة عشر عامًا بين فرنسا وتونس. أتدخّل بصفة <strong>قائد تقني</strong> أو <strong>مهندس بنية برمجيات</strong> أو <strong>مطوّر متكامل</strong> في المشاريع الدقيقة: منصّات الذكاء الاصطناعي، والتطبيقات الحيوية، والحوسبة السحابية، والأمن السيبراني.",
+    "hero.lead":   "مهندس برمجيات أول ومقاول ذاتي، بخبرة ستة عشر عامًا بين فرنسا وتونس. أتدخّل بصفة <strong>قائد تقني</strong> أو <strong>مهندس بنية برمجيات</strong> أو <strong>مطوّر متكامل</strong> في المشاريع الدقيقة: منصّات الذكاء الاصطناعي، والتطبيقات الحيوية، والحوسبة السحابية، والأمن السيبراني.",
     "hero.cta1":   "لنتحدّث عن مشروعك",
     "hero.cta2":   "استعراض الخدمات",
     "hero.meta1":  "عن بُعد، أو بنظام مختلط، أو في الموقع (تونس الكبرى)",
@@ -271,6 +274,7 @@ window.I18N = {
     "stats.2.k": "المهام والشركات",
     "stats.3.k": "تخفيض في كلفة الاستضافة السحابية",
     "stats.4.k": "مهندسون تحت إشرافي",
+    "stats.upto": "حتى",
 
     "about.kicker": "نبذة",
     "about.title":  "ثلاث مِهَن في ملف واحد",
@@ -339,7 +343,7 @@ window.I18N = {
     "work.1.r": "تطبيق جوّال · عمل مستقل",
     "work.1.d": "تطبيق لصيانة الدرّاجات النارية وتقدير أسعارها، مطوَّر أصليًا لـ iOS وAndroid وكذلك بـ Flutter، مع مساعدة بالذكاء الاصطناعي في التشخيص وتحقيق أرباح عبر AdMob.",
     "work.2.r": "قائد تقني للذكاء الاصطناعي · منصّة SaaS",
-    "work.2.d": "القيادة التقنية لمنصّة ذكاء اصطناعي: إدارة فريق من تسعة أشخاص، وإرساء وكلاء لأتمتة ضمان الجودة، والانتقال من Azure إلى Hetzner بتخفيض فاتورة الاستضافة بأكثر من 90%.",
+    "work.2.d": "القيادة التقنية لمنصّة ذكاء اصطناعي: إدارة فريق يصل إلى تسعة أشخاص، وإرساء وكلاء لأتمتة ضمان الجودة، والانتقال من Azure إلى Hetzner بتخفيض فاتورة الاستضافة بأكثر من 90%.",
     "work.3.t": "الديوانة التونسية",
     "work.3.r": "قائد تطوير متكامل بالذكاء الاصطناعي · BNS Engineering وNetCompany",
     "work.3.d": "تطبيق أعمال لإدارة الديوانة، مبنيّ بمساعدة وكلاء أذكياء: خادم Java/Spring، وواجهة React، ومصادقة Keycloak، وناقل Kafka، ونشر مُراقَب على Kubernetes.",
@@ -359,7 +363,9 @@ window.I18N = {
     "path.1.d":  "مهمّة قيادة تقنية بصفة مستقلّة، مع تطوير معزّز بوكلاء الذكاء الاصطناعي.",
     "path.2.d":  "تطبيق لفائدة الديوانة التونسية، بشراكة مع NetCompany. Java، Spring، React، Kubernetes.",
     "path.3.d":  "اختبارات الفريق الأحمر لأنظمة تعتمد نماذج اللغة (DeepTeam، Promptfoo)، ومرجعية OWASP للوكلاء الأذكياء.",
-    "path.4.d":  "إدارة فريق من تسعة أشخاص، وتصميم بنية المنصّة، وقيادة الانتقال السحابي (−90% من الكلفة)، والمشاركة كعارض في معرض المتوسّط للذكاء الاصطناعي.",
+    "path.4.d":  "إدارة فريق يصل إلى تسعة أشخاص، وتصميم بنية المنصّة، وقيادة الانتقال السحابي (−90% من الكلفة)، والمشاركة كعارض في معرض المتوسّط للذكاء الاصطناعي.",
+    "path.ws.d":  "تطوير تطبيق لتبادل الملفّات بأمان: تشفير التبادلات، ومصادقة متعدّدة العوامل، وتخزين كائني خاص. React 19، Vite، NestJS، Prisma، PostgreSQL، MinIO، Docker، وCI/CD عبر GitHub.",
+    "path.sew.d": "تعرّف على البطاقات الإلكترونية وتشخيصها عبر القراءة الضوئية ونماذج الرؤية، مع حلول صيانة بمساعدة نماذج اللغة.",
     "path.5.d":  "تطبيقات في الصحّة واللوجستيك والنقل العمومي. تطوير بـ Java/Spring/React، واختبارات اختراق، وDevOps على Azure، وتطبيق ويب تقدّمي.",
     "path.6.d":  "بنية منصّة low-code موجّهة بالأحداث، وخدمات مصغّرة، ومعالجة ثغرات أمنية، وتوليد الشيفرة.",
     "path.7.d":  "تطبيق CRM/ERP: إدارة المشروع، والمسؤولية التقنية، وضمان الجودة، وتشغيل الخوادم.",
@@ -416,7 +422,7 @@ window.I18N = {
     "form.send":  "الإرسال بالبريد الإلكتروني",
     "form.note":  "يفتح هذا الزرّ برنامج البريد لديك مع رسالة مُعبّأة مسبقًا. لا تُخزَّن أيّ بيانات على هذا الموقع.",
 
-    "footer.status": "مهندس برمجيات مستقل، تونس",
+    "footer.status": "مهندس برمجيات ومقاول ذاتي، تونس",
     "footer.print":  "طباعة / PDF",
     "footer.top":    "أعلى الصفحة"
   }
